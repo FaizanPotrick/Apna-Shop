@@ -153,7 +153,7 @@ function Login() {
             {isLoading ? <div className="spinner-border"></div> : "Login"}
           </button>
           <p className="text-center text-muted mt-2 m-0">
-            Don't have an account?{" "}
+            Don&#39;t have an account?{" "}
             <Link href="/register">
               <span
                 style={{ cursor: "pointer" }}
