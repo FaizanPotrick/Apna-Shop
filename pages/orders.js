@@ -5,7 +5,7 @@ import Context from "../components/Context";
 import MyOrderCard from "../components/MyOrderCard";
 import Head from "next/head";
 
-function orders(props) {
+function Orders(props) {
   const { setIsError } = useContext(Context);
   const [order] = useState(() => (props.pageFound ? props.data : []));
   if (!props.pageFound) {
@@ -101,4 +101,4 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default orders;
+export default Orders;

@@ -4,7 +4,7 @@ import { useContext } from "react";
 import Context from "../components/Context";
 import Head from "next/head";
 
-function forgetpassword() {
+function Forgetpassword() {
   const { setIsAlert } = useContext(Context);
   const [forgetPassword, setForgetPassword] = useState({
     emailAddress: "",
@@ -365,4 +365,4 @@ function forgetpassword() {
   );
 }
 
-export default forgetpassword;
+export default Forgetpassword;

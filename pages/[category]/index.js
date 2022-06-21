@@ -6,7 +6,7 @@ import { useContext } from "react";
 import Context from "../../components/Context";
 import Head from "next/head";
 
-function index(props) {
+function Index(props) {
   const context = useContext(Context);
   const { setIsError, data } = context;
   const router = useRouter();
@@ -90,4 +90,4 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default index;
+export default Index;

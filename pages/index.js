@@ -46,7 +46,7 @@ export default function Home(props) {
     </div>
   );
 }
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/discount`);
   const data = await res.json();
   if (data.success === false && res.status === 500) {

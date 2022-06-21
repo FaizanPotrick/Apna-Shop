@@ -5,7 +5,7 @@ import { useContext } from "react";
 import Context from "../components/Context";
 import Head from "next/head";
 
-function search(props) {
+function Search(props) {
   const router = useRouter();
   const { searching } = router.query;
   const { setIsError } = useContext(Context);
@@ -96,4 +96,4 @@ export async function getServerSideProps(context) {
     };
   }
 }
-export default search;
+export default Search;

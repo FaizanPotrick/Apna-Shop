@@ -6,7 +6,7 @@ import { useContext } from "react";
 import Context from "../components/Context";
 import Head from "next/head";
 
-function address(props) {
+function Address(props) {
   const { setIsAlert, setIsError } = useContext(Context);
   const [userAddress] = useState(() => (props.pageFound ? props.data : []));
   if (!props.pageFound) {
@@ -328,4 +328,4 @@ export async function getServerSideProps(context) {
     };
   }
 }
-export default address;
+export default Address;

@@ -19,7 +19,7 @@ function Navbar() {
 
   useEffect(() => {
     const userData = async () => {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/navbar`, {
+      const res = await fetch("/api/navbar", {
         method: "POST",
         headers: {
           Accept: "application/json",

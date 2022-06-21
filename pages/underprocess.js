@@ -5,7 +5,7 @@ import { useContext } from "react";
 import Context from "../components/Context";
 import Head from "next/head";
 
-function order(props) {
+function Underprocess(props) {
   const { setIsAlert, setIsError } = useContext(Context);
   const [cart] = useState(() => (props.pageFound ? props.underProcess : []));
   const [address] = useState(() => (props.pageFound ? props.address : []));
@@ -299,4 +299,4 @@ export async function getServerSideProps(context) {
     };
   }
 }
-export default order;
+export default Underprocess;

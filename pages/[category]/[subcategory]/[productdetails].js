@@ -6,7 +6,7 @@ import { useContext } from "react";
 import Context from "../../../components/Context";
 import Head from "next/head";
 
-function productdetails(props) {
+function Productdetails(props) {
   const router = useRouter();
   const context = useContext(Context);
   const { setIsAlert, setIsError } = context;
@@ -248,4 +248,4 @@ export async function getServerSideProps(context) {
     };
   }
 }
-export default productdetails;
+export default Productdetails;

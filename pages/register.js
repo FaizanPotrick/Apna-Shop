@@ -5,7 +5,7 @@ import { useContext } from "react";
 import Context from "../components/Context";
 import Head from "next/head";
 
-function register() {
+function Register() {
   const { setIsAlert } = useContext(Context);
   const [register, setRegister] = useState({
     fName: "",
@@ -749,4 +749,4 @@ function register() {
   );
 }
 
-export default register;
+export default Register;

@@ -5,7 +5,7 @@ import { useContext } from "react";
 import Context from "../components/Context";
 import Head from "next/head";
 
-function login() {
+function Login() {
   const { setIsAlert } = useContext(Context);
   const [login, setLogin] = useState({
     emailAddress: "",
@@ -172,4 +172,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;

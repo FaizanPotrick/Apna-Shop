@@ -6,7 +6,7 @@ import { useContext } from "react";
 import Context from "../components/Context";
 import Head from "next/head";
 
-function mycart(props) {
+function Mycart(props) {
   const { setIsAlert, setIsError } = useContext(Context);
   const [myCart] = useState(() => (props.pageFound ? props.data : []));
   if (!props.pageFound) {
@@ -166,4 +166,4 @@ export async function getServerSideProps(context) {
     };
   }
 }
-export default mycart;
+export default Mycart;
