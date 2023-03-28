@@ -1,24 +1,22 @@
 import db from "../../utils/db";
 import Cart from "../../models/Cart";
+import Product from "../../models/Product";
 
 db();
 
 export default async (req, res) => {
   const { method } = req;
-  const { quantity, user_id, product_id } = req.body;
+  const { quantity, product_id } = req.body;
+  const { user_id } = req.cookies;
   switch (method) {
     case "GET":
-      try {
-        const response = await Cart.find({ user_id }).lean();
-        res.send(response);
-      } catch (error) {
-        res.status(500).send("Internal Server Error");
-      }
+      const response = await Cart.find({ user_id }).lean();
+      res.send(response);
       break;
     case "POST":
       try {
         const product_response = await Product.findById(product_id).lean();
-        if (product_response.avaliability === 0)
+        if (product_response.stock === 0)
           return res.status(400).send("Out of Stock");
         const cart_response = await Cart.findOne({
           user_id,
@@ -40,10 +38,11 @@ export default async (req, res) => {
         await Cart.create({
           user_id,
           product_id,
+          quantity,
         });
         res.send("Item Added Successfully");
       } catch (error) {
-        res.status(400).send("Invalid Request");
+        res.status(400).send(error.message);
       }
       break;
     case "PUT":
@@ -56,7 +55,7 @@ export default async (req, res) => {
         );
         res.end();
       } catch (error) {
-        res.status(400).send("Invalid Request");
+        res.status(400).send(error.message);
       }
       break;
     case "DELETE":
@@ -64,7 +63,7 @@ export default async (req, res) => {
         await Cart.findOneAndRemove({ user_id, product_id });
         res.end();
       } catch (error) {
-        res.status(400).send("Invalid Request");
+        res.status(400).send(error.message);
       }
       break;
   }
