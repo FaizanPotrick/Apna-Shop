@@ -18,5 +18,4 @@ const CartSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const myDB = mongoose.connection.useDb("ApnaShop");
-module.exports = myDB.model("Cart", CartSchema);
+module.exports = mongoose.models.Cart || mongoose.model("Cart", CartSchema);

@@ -4,7 +4,6 @@ import Context from "../components/Context";
 import Alert from "../components/Alert";
 import Navbar from "../components/Navbar";
 import Head from "next/head";
-import Link from "next/link";
 import ErrorPage from "../components/ErrorPage";
 import Script from "next/script";
 import { MantineProvider, Text } from "@mantine/core";

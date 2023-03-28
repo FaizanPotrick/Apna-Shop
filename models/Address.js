@@ -55,5 +55,6 @@ const AddressSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-const myDB = mongoose.connection.useDb("ApnaShop");
-module.exports = myDB.model("Address", AddressSchema);
+
+module.exports =
+  mongoose.models.Address || mongoose.model("Address", AddressSchema);

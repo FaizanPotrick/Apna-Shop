@@ -39,5 +39,5 @@ const OrderSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-const myDB = mongoose.connection.useDb("UserDetails");
-module.exports = myDB.model("Order", OrderSchema);
+
+module.exports = mongoose.models.Order || mongoose.model("Order", OrderSchema);
