@@ -91,7 +91,7 @@ function Navbar() {
               variant="default"
               onClick={() => {
                 setIsLogin(false);
-                Cookies.remove("token");
+                Cookies.remove("user_id");
               }}
             >
               Log out

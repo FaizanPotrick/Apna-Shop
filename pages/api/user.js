@@ -1,6 +1,5 @@
 import db from "../../utils/db";
 import User from "../../models/User";
-import Address from "../../models/Address";
 import bcrypt from "bcrypt";
 
 db();
@@ -41,10 +40,7 @@ export default async (req, res) => {
       }
       break;
     case "PUT":
-      const {
-        name,
-        address: { street, landMark, city, district, state, country, pinCode },
-      } = req.body;
+      const { name, address } = req.body;
       try {
         const email_check = await User.findOne({
           email_address,
@@ -57,28 +53,13 @@ export default async (req, res) => {
           return res.status(400).json({
             cPassword: "Password didn't match",
           });
-        const user_response = await new User({
+        const user_response = await User.create({
           name,
           email_address,
           phone_number,
+          address,
           password: bcrypt.hashSync(password, saltRounds),
         });
-        const address_response = await new Address({
-          user_id: user_response._id,
-          default: true,
-          street,
-          landMark,
-          city,
-          district,
-          state,
-          country,
-          pinCode,
-        });
-        await Promise.all([
-          user_response.validate(),
-          address_response.validate(),
-        ]);
-        await Promise.all([user_response.save(), address_response.save()]);
         res.send(user_response._id);
       } catch (error) {
         res.status(400).send(error.message);

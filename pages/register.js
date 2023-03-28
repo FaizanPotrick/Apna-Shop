@@ -25,15 +25,7 @@ function Register() {
       name: "",
       email_address: "",
       phone_number: "",
-      address: {
-        street: "",
-        landMark: "",
-        city: "",
-        district: "",
-        state: "",
-        country: "",
-        pinCode: "",
-      },
+      address: "",
       password: "",
       cPassword: "",
     },
@@ -44,30 +36,10 @@ function Register() {
         { min: 10, max: 10 },
         "Phone number must be 10 digits"
       ),
-      address: {
-        street: hasLength(
-          { min: 3 },
-          "Street must be at least 3 characters long"
-        ),
-        landMark: hasLength(
-          { min: 3 },
-          "Landmark must be at least 3 characters long"
-        ),
-        city: hasLength({ min: 3 }, "City must be at least 3 characters long"),
-        district: hasLength(
-          { min: 3 },
-          "District must be at least 3 characters long"
-        ),
-        state: hasLength(
-          { min: 3 },
-          "State must be at least 3 characters long"
-        ),
-        country: hasLength(
-          { min: 3 },
-          "Country must be at least 3 characters long"
-        ),
-        pinCode: hasLength({ min: 6 }, "Pin Code must be 6 digits"),
-      },
+      address: hasLength(
+        { min: 3 },
+        "Address must be at least 3 characters long"
+      ),
       password: hasLength(
         { min: 6, max: 12 },
         "Password must be at least 6 characters long"
@@ -175,53 +147,10 @@ function Register() {
               withAsterisk
             />
             <TextInput
-              placeholder="Street"
-              label="Street"
-              {...form.getInputProps("address.street")}
+              placeholder="Address"
+              label="Address"
+              {...form.getInputProps("address")}
               withAsterisk
-            />
-            <TextInput
-              placeholder="Landmark"
-              label="Landmark"
-              {...form.getInputProps("address.landMark")}
-              withAsterisk
-            />
-            <TextInput
-              placeholder="City"
-              label="City"
-              {...form.getInputProps("address.city")}
-              withAsterisk
-            />
-            <TextInput
-              placeholder="District"
-              label="District"
-              {...form.getInputProps("address.district")}
-              withAsterisk
-            />
-            <TextInput
-              placeholder="State"
-              label="State"
-              {...form.getInputProps("address.state")}
-              withAsterisk
-            />
-            <TextInput
-              placeholder="Country"
-              label="Country"
-              {...form.getInputProps("address.country")}
-              withAsterisk
-            />
-            <TextInput
-              placeholder="Pin Code"
-              label="Pin Code"
-              {...form.getInputProps("address.pinCode")}
-              withAsterisk
-            />
-            <PasswordInput
-              placeholder="Password"
-              label="Password"
-              {...form.getInputProps("password")}
-              withAsterisk
-              autoComplete="off"
             />
             <PasswordInput
               placeholder="Confirm Password"
