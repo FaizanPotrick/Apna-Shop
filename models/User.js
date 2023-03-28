@@ -20,17 +20,6 @@ const UserSchema = new mongoose.Schema(
       required: [true, "Email address is required"],
       unique: true,
     },
-    type_of_user: {
-      type: String,
-      trim: true,
-      lowercase: true,
-      enum: ["buyer", "seller"],
-      match: [
-        /^(buyer|seller)$/,
-        (props) => `${props.value} is not a valid type of user`,
-      ],
-      required: [true, "Type of user is required"],
-    },
     phone_number: {
       type: String,
       trim: true,
@@ -41,16 +30,6 @@ const UserSchema = new mongoose.Schema(
       ],
       required: [true, "Phone number is required"],
     },
-    gst_number: {
-      type: String,
-      trim: true,
-      match: [
-        /^[A-Za-z0-9]+$/,
-        (props) => `${props.value} is not a valid GST number`,
-      ],
-      required: [true, "GST number is required"],
-      unique: true,
-    },
     password: {
       type: String,
       required: [true, "Password is required"],
@@ -58,5 +37,5 @@ const UserSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-const User = mongoose.connection.useDb("UserDetails");
-module.exports = User.model("Register", UserSchema);
+const User = mongoose.connection.useDb("ApnaShop");
+module.exports = User.model("User", UserSchema);

@@ -6,6 +6,10 @@ const AddressSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       required: [true, "Please add a user id"],
     },
+    default: {
+      type: Boolean,
+      default: false,
+    },
     street: {
       type: String,
       trim: true,
@@ -51,5 +55,5 @@ const AddressSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-const myDB = mongoose.connection.useDb("UserDetails");
+const myDB = mongoose.connection.useDb("ApnaShop");
 module.exports = myDB.model("Address", AddressSchema);
