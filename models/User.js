@@ -37,5 +37,5 @@ const UserSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-const User = mongoose.connection.useDb("ApnaShop");
-module.exports = User.model("User", UserSchema);
+
+module.exports = mongoose.models.User || mongoose.model("User", UserSchema);
