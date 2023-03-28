@@ -12,7 +12,7 @@ import {
   LoadingOverlay,
   Text,
 } from "@mantine/core";
-import { useForm, isNotEmpty, isEmail } from "@mantine/form";
+import { useForm, isEmail, hasLength } from "@mantine/form";
 import axios from "axios";
 
 function Login() {
@@ -24,7 +24,10 @@ function Login() {
     },
     validate: {
       email_address: isEmail("Invalid Email address"),
-      password: isNotEmpty("Invalid Password"),
+      password: hasLength(
+        { min: 6, max: 12 },
+        "Password must be at least 6 characters long"
+      ),
     },
   });
 
@@ -90,24 +93,15 @@ function Login() {
             <TextInput
               placeholder="Email address"
               label="Email address"
-              value={form.values.email_address}
-              onChange={(event) =>
-                form.setFieldValue("email_address", event.currentTarget.value)
-              }
-              error={form.errors.email_address}
-              required
+              {...form.getInputProps("email_address")}
+              withAsterisk
             />
             <PasswordInput
               placeholder="Password"
               label="Password"
-              value={form.values.password}
-              onChange={(event) =>
-                form.setFieldValue("password", event.target.value)
-              }
-              error={form.errors.password}
               autoComplete="off"
-              min={6}
-              required
+              {...form.getInputProps("password")}
+              withAsterisk
             />
           </Stack>
           <div
