@@ -1,5 +1,5 @@
 import db from "../../utils/db";
-import Register from "../../models/Register";
+import Register from "../../models/User";
 import Cart from "../../models/Cart";
 
 db();
