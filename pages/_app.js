@@ -7,6 +7,7 @@ import Head from "next/head";
 import ErrorPage from "../components/ErrorPage";
 import Script from "next/script";
 import { MantineProvider, Text } from "@mantine/core";
+import Cookies from "js-cookie";
 
 function MyApp({ Component, pageProps }) {
   const [isAlert, setIsAlert] = useState({
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
     status: "",
     message: "",
   });
+  const [isLogin, setIsLogin] = useState(Cookies.get("user_id") ? true : false);
   const data = [
     {
       CategoryName: "Grocery",
@@ -85,6 +87,8 @@ function MyApp({ Component, pageProps }) {
         setIsError,
         data,
         images,
+        isLogin,
+        setIsLogin,
       }}
     >
       <MantineProvider>

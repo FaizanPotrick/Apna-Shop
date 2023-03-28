@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Link from "next/link";
 import Router from "next/router";
 import Head from "next/head";
@@ -15,8 +15,10 @@ import {
 import { useForm, isEmail, hasLength } from "@mantine/form";
 import axios from "axios";
 import Cookies from "js-cookie";
+import Context from "../components/Context";
 
 function Register() {
+  const { isLogin, setIsLogin, setIsAlert } = useContext(Context);
   const [loading, setLoading] = useState(false);
   const form = useForm({
     initialValues: {
@@ -77,6 +79,12 @@ function Register() {
     },
   });
 
+  useEffect(() => {
+    if (isLogin) {
+      Router.back();
+    }
+  }, [isLogin]);
+
   return (
     <div className="d-flex align-items-center justify-content-center w-100">
       <LoadingOverlay
@@ -112,6 +120,7 @@ function Register() {
               const { data } = await axios.put("/api/user", val);
               Cookies.set("user_id", data);
               form.reset();
+              setIsLogin(true);
               Router.back();
               setLoading(false);
             } catch (error) {
@@ -126,9 +135,15 @@ function Register() {
                   "password",
                   error.response.data.cPassword
                 );
-              if (error.response.data) return alert(error.response.data);
-              console.log(error);
-              alert(error);
+              if (error.response.data)
+                return setIsAlert({
+                  alert: true,
+                  message: error.response.data,
+                });
+              setIsAlert({
+                alert: true,
+                message: error.message,
+              });
             }
           })}
         >

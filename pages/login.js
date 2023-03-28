@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Link from "next/link";
 import Router from "next/router";
 import Head from "next/head";
@@ -14,8 +14,11 @@ import {
 } from "@mantine/core";
 import { useForm, isEmail, hasLength } from "@mantine/form";
 import axios from "axios";
+import Cookies from "js-cookie";
+import Context from "../components/Context";
 
 function Login() {
+  const { isLogin, setIsLogin, setIsAlert } = useContext(Context);
   const [loading, setLoading] = useState(false);
   const form = useForm({
     initialValues: {
@@ -30,6 +33,12 @@ function Login() {
       ),
     },
   });
+
+  useEffect(() => {
+    if (isLogin) {
+      Router.back();
+    }
+  }, [isLogin]);
 
   return (
     <div className="d-flex align-items-center justify-content-center w-100">
@@ -63,8 +72,10 @@ function Login() {
           onSubmit={form.onSubmit(async (val) => {
             setLoading(true);
             try {
-              await axios.post("/api/user", val);
+              const { data } = await axios.post("/api/user", val);
+              Cookies.set("user_id", data);
               form.reset();
+              setIsLogin(true);
               Router.back();
               setLoading(false);
             } catch (error) {
@@ -79,9 +90,15 @@ function Login() {
                   "password",
                   error.response.data.password
                 );
-              if (error.response.data) return alert(error.response.data);
-              console.log(error);
-              alert(error);
+              if (error.response.data)
+                return setIsAlert({
+                  alert: true,
+                  message: error.response.data,
+                });
+              setIsAlert({
+                alert: true,
+                message: error.message,
+              });
             }
           })}
         >
