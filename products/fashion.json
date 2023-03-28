@@ -1,0 +1,182 @@
+[
+  {
+    "product_name": "Casual Outfit",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 10,
+    "price": 3000,
+    "stock": 50,
+    "image_url": "http://covetme.s3.amazonaws.com/beta/Z1bspvi/casualdress-offduty-men-covetme%20sponsored.jpg"
+  },
+  {
+    "product_name": "Casual Outfit",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 0,
+    "price": 3000,
+    "stock": 50,
+    "image_url": "https://www.outfit-styles.com/wp-content/uploads/2020/07/33.Casual-Mens-Outfit.jpg"
+  },
+  {
+    "product_name": "Formal Outfit",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 0,
+    "price": 2000,
+    "stock": 50,
+    "image_url": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/10241781/2019/7/29/56470f50-e4c6-42a6-a402-240c94209b901564383030809-Louis-Philippe-Men-Suits-9401564383030075-1.jpg"
+  },
+  {
+    "product_name": "Formal Outfit",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 60,
+    "price": 3000,
+    "stock": 20,
+    "image_url": "https://cdn.fashiola.in/L90730487/van-heusen-men-grey-slim-fit-single-breasted-two-piece-fashion-formal-suit.jpg"
+  },
+  {
+    "product_name": "Classic Style Outfit",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 6,
+    "price": 2000,
+    "stock": 50,
+    "image_url": "https://i.pinimg.com/originals/87/5f/72/875f728b33cb8bbe27701d226cbb4455.jpg"
+  },
+  {
+    "product_name": "Classic Style Outfit",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 16,
+    "price": 4000,
+    "stock": 50,
+    "image_url": "https://i.pinimg.com/236x/1b/6f/76/1b6f7685073a8e1d049c1af566a217a6.jpg"
+  },
+  {
+    "product_name": "Urban Style",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 0,
+    "price": 1500,
+    "stock": 30,
+    "image_url": "https://i.pinimg.com/236x/20/b4/d2/20b4d28d9683204669b1da8da6deca9c.jpg"
+  },
+  {
+    "product_name": "Urban Style",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 0,
+    "price": 1000,
+    "stock": 0,
+    "image_url": "https://nextluxury.com/wp-content/uploads/cool-black-leather-jacket-street-style.jpg"
+  },
+  {
+    "product_name": "Winter Fashion",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 50,
+    "price": 2000,
+    "stock": 50,
+    "image_url": "https://i.pinimg.com/736x/14/f1/d2/14f1d20ced53568b808e5e73dd818cf1.jpg"
+  },
+  {
+    "product_name": "Winter Fashion",
+    "category": "fashion",
+    "subcategory": "men",
+    "discount": 70,
+    "price": 3000,
+    "stock": 50,
+    "image_url": "https://www.outfit-fashion.com/wp-content/uploads/2020/04/Mens-Casual-Winter-Style-2020.jpg"
+  },
+  {
+    "product_name": "Cute Outfit",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 10,
+    "price": 2500,
+    "stock": 5,
+    "image_url": "https://i.ebayimg.com/images/g/Hz0AAOSwcwZg82Qq/s-l400.jpg"
+  },
+  {
+    "product_name": "Cute Outfit",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 20,
+    "price": 3000,
+    "stock": 0,
+    "image_url": "https://i.pinimg.com/originals/47/04/33/4704331b20a715eff37e14179322d0ca.jpg"
+  },
+  {
+    "product_name": "Office Fashion",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 50,
+    "price": 4000,
+    "stock": 10,
+    "image_url": "https://i.pinimg.com/originals/d2/0f/a6/d20fa6e9354db3e34ca1cadca9c41444.jpg"
+  },
+  {
+    "product_name": "Office Fashion",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 70,
+    "price": 3000,
+    "stock": 50,
+    "image_url": "https://ae01.alicdn.com/kf/HTB1wHmIq5CYBuNkHFCcq6AHtVXaz/Korean-Office-Lady-Work-Wear-Plaid-Pant-Suits-2018-New-Fashion-Elegant-2-Piece-Set-Women.jpg_q50.jpg"
+  },
+  {
+    "product_name": "Elegent Outfit",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 70,
+    "price": 3000,
+    "stock": 30,
+    "image_url": "https://ae01.alicdn.com/kf/H62b8209d7bf84d69b9ade166020ea198n/Ladies-Elegant-A-line-Casual-Dress-New-Autumn-Fashion-Korean-Style-Patchwork-V-neck-Long-Sleeve.jpg"
+  },
+  {
+    "product_name": "Elegent Outfit",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 20,
+    "price": 3000,
+    "stock": 50,
+    "image_url": "https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9hZTAxLmFsaWNkbi5jb20va2YvSExCMXBLZXVieXJ4SzFSa0hGQ2NxNkFRQ1ZYYXgvU3VtbWVyLUtvcmVhbi1DaGlmZm9uLVdvbWVuLURyZXNzLUVsZWdhbnQtTGFkaWVzLVZpbnRhZ2UtTG9uZy1EcmVzcy1Cb2hvLUZsb3JhbC1PZmZpY2UtTG9uZy1TbGVldmUtVmVzdGlkb3MuanBn.jpg"
+  },
+  {
+    "product_name": "Spring Fashion",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 30,
+    "price": 1000,
+    "stock": 40,
+    "image_url": "https://image.made-in-china.com/202f0j00CVHpKmTnElkr/2022-Fashion-New-Women-s-Spring-Autumn-Shirt-Elegant-Korean-Style-V-Neck-Design-Long-Sleeve-Classic-Printing-Leisure-Girl-s-Dress.jpg"
+  },
+  {
+    "product_name": "Spring Fashion",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 70,
+    "price": 6000,
+    "stock": 50,
+    "image_url": "https://i.pinimg.com/236x/53/48/ec/5348ecc725d1fca6bc2e0b190cd9dbd7--ulzzang-fashion-k-fashion.jpg"
+  },
+  {
+    "product_name": "Party Wear",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 50,
+    "price": 2800,
+    "stock": 50,
+    "image_url": "https://sc04.alicdn.com/kf/HLB13CADUwHqK1RjSZFEq6AGMXXa3.jpg"
+  },
+  {
+    "product_name": "Party Wear",
+    "category": "fashion",
+    "subcategory": "women",
+    "discount": 70,
+    "price": 3000,
+    "stock": 50,
+    "image_url": "https://bazarfx.com/Attachments/items/a76e0a60-a32b-402d-bde8-8630dc600825/1.jpg"
+  }
+]

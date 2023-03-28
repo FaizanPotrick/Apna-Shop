@@ -1,0 +1,182 @@
+[
+  {
+    "product_name": "Diamond Chokar",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 30,
+    "price": 5000,
+    "stock": 50,
+    "image_url": "https://productimages.withfloats.com/tile/5dfdfde199fc510001a44ee5.jpg"
+  },
+  {
+    "product_name": "American Diamond",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 10,
+    "price": 7000,
+    "stock": 10,
+    "image_url": "https://5.imimg.com/data5/EA/OT/MY-42396081/american-diamond-jewellery-500x500.jpeg"
+  },
+  {
+    "product_name": "Priyasi Rose Gold Plated",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 0,
+    "price": 1000,
+    "stock": 30,
+    "image_url": "https://images-static.nykaa.com/media/catalog/product/7/6/76327a8nykpriy000055.jpg?tr=w-500,pr-true"
+  },
+  {
+    "product_name": "Pearl Gold Plated",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 20,
+    "price": 5000,
+    "stock": 5,
+    "image_url": "https://n1.sdlcdn.com/imgs/h/f/u/BE-Pearl-Gold-Plated-Simple-SDL671936500-1-95f85.jpg"
+  },
+  {
+    "product_name": "Party Wear",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 90,
+    "price": 1000,
+    "stock": 10,
+    "image_url": "https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/k/u/kundan-necklace-set-v1-jpm6215.jpg"
+  },
+  {
+    "product_name": "Simple Party Wear Necklace",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 70,
+    "price": 999,
+    "stock": 0,
+    "image_url": "https://cdn.shopify.com/s/files/1/0307/3998/8539/products/image_4f504ebe-0c3c-4282-a768-736cfc27d3a1_grande.jpg?v=1640273111"
+  },
+  {
+    "product_name": "Party Wear Necklace",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 40,
+    "price": 899,
+    "stock": 0,
+    "image_url": "https://i.pinimg.com/originals/56/d4/bc/56d4bce7c9584f782c59c7adf2965562.jpg"
+  },
+  {
+    "product_name": "Party Wear Bracelet",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 50,
+    "price": 500,
+    "stock": 3,
+    "image_url": "https://www.anuradhaartjewellery.com/assets/images/product/80945/400/GJB-1512-NET_RS-4800_31_white.jpeg"
+  },
+  {
+    "product_name": "Butterfly Gold Ring",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 30,
+    "price": 400,
+    "stock": 6,
+    "image_url": "https://canary.contestimg.wish.com/api/webimage/5e4fab7f990589528702f401-contest.jpg?cache_buster=ec28338bb48d3f1b5d99af7eaa290fa2"
+  },
+  {
+    "product_name": "White Flower Rose Gold Plated",
+    "category": "accessories",
+    "subcategory": "jewelry",
+    "discount": 90,
+    "price": 3000,
+    "stock": 50,
+    "image_url": "https://cdn.shopify.com/s/files/1/0080/5070/4441/products/product-image-1198335560_800x.jpg?v=1579558002"
+  },
+  {
+    "product_name": "Denim Lace",
+    "category": "accessories",
+    "subcategory": "shoes",
+    "discount": 80,
+    "price": 1200,
+    "stock": 50,
+    "image_url": "https://ae01.alicdn.com/kf/H7d5e89b6829e45989822110b7377550aR/Canvas-Men-Shoes-Denim-Lace-Up-Men-Casual-Shoes-Summer-New-2020-Plimsolls-Breathable-Sneakers-Male.jpg_Q90.jpg_.webp"
+  },
+  {
+    "product_name": "Casual Shoes for Women",
+    "category": "accessories",
+    "subcategory": "shoes",
+    "discount": 70,
+    "price": 1000,
+    "stock": 50,
+    "image_url": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/17450954/2022/3/9/9e20f37c-5da9-40c0-8c6b-d347402eb5811646808454812RedTapeWomenWhiteWovenDesignSneakers1.jpg"
+  },
+  {
+    "product_name": "Formal Shoes for Men",
+    "category": "accessories",
+    "subcategory": "shoes",
+    "discount": 50,
+    "price": 2000,
+    "stock": 5,
+    "image_url": "https://m.media-amazon.com/images/I/71gfqJtP3HL._UL1500_.jpg"
+  },
+  {
+    "product_name": "Formal Shoes for Women",
+    "category": "accessories",
+    "subcategory": "shoes",
+    "discount": 40,
+    "price": 3000,
+    "stock": 30,
+    "image_url": "https://footwearnews.com/wp-content/uploads/2020/11/Tods.jpg?w=683"
+  },
+  {
+    "product_name": "Kids Shoes",
+    "category": "accessories",
+    "subcategory": "shoes",
+    "discount": 60,
+    "price": 900,
+    "stock": 40,
+    "image_url": "https://www.mestooblikovanja.com/images/u/kids%20shoes%20boys-379sdf.jpg"
+  },
+  {
+    "product_name": "Harry Black Watch",
+    "category": "accessories",
+    "subcategory": "watch",
+    "discount": 50,
+    "price": 600,
+    "stock": 10,
+    "image_url": "https://5.imimg.com/data5/NI/TB/RU/SELLER-87713143/salman-khan-designer-black-watch-sdl264003936-1-79db5-500x500.jpg"
+  },
+  {
+    "product_name": "Benyar Mens Watch",
+    "category": "accessories",
+    "subcategory": "watch",
+    "discount": 10,
+    "price": 900,
+    "stock": 6,
+    "image_url": "https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFNRlpaV1N2UkwuX0FDX1VMMTIwMF8uanBn.jpg"
+  },
+  {
+    "product_name": "Declasse Metal Round Womens Watch",
+    "category": "accessories",
+    "subcategory": "watch",
+    "discount": 0,
+    "price": 3000,
+    "stock": 50,
+    "image_url": "https://n2.sdlcdn.com/imgs/j/o/6/DECLASSE-Metal-Round-Womens-Watch-SDL265240030-1-a0d30.jpeg"
+  },
+  {
+    "product_name": "Logme Stainless Steel Round Womens Watch",
+    "category": "accessories",
+    "subcategory": "watch",
+    "discount": 0,
+    "price": 1000,
+    "stock": 30,
+    "image_url": "https://n2.sdlcdn.com/imgs/i/j/4/LOGME-Stainless-Steel-Round-Womens-SDL283091000-1-bf430.jpg"
+  },
+  {
+    "product_name": "kids Smart Watch",
+    "category": "accessories",
+    "subcategory": "watch",
+    "discount": 0,
+    "price": 2000,
+    "stock": 20,
+    "image_url": "https://i5.walmartimages.com/asr/9f156179-fa48-433e-88a8-44db84254437.59c848fe6340b59e1c5c33a8f22a8506.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+  }
+]

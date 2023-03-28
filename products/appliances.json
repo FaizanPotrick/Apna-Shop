@@ -1,0 +1,182 @@
+[
+  {
+    "product_name": "Samsung Refrigerator",
+    "category": "appliances",
+    "subcategory": "refrigerator",
+    "discount": 50,
+    "price": 70000,
+    "stock": 20,
+    "image_url": "https://images.samsung.com/is/image/samsung/assets/us/home-appliances/pfs/06-30-2020/3-door-french-door-2x.jpg?$144_144_JPG$"
+  },
+  {
+    "product_name": "Samsung 676",
+    "category": "appliances",
+    "subcategory": "refrigerator",
+    "discount": 30,
+    "price": 50000,
+    "stock": 10,
+    "image_url": "https://m.media-amazon.com/images/I/81zm2tvUtKL._SX385_.jpg"
+  },
+  {
+    "product_name": "Samsung 6.5kg Fully Automatic Washing Machine",
+    "category": "appliances",
+    "subcategory": "washing machine",
+    "discount": 20,
+    "price": 40000,
+    "stock": 10,
+    "image_url": "https://khoslaonline.com/wp-content/uploads/2021/05/71WVrWQMXzL._SL1500_.jpg"
+  },
+  {
+    "product_name": "Samsung 7.5kg Semi Automatic",
+    "category": "appliances",
+    "subcategory": "washing machine",
+    "discount": 40,
+    "price": 30000,
+    "stock": 10,
+    "image_url": "https://i.gadgets360cdn.com/products/top-load-washing-machine-wt75m3200hb-large-90631-157308-1584970983.jpeg"
+  },
+  {
+    "product_name": "Samsung Slide-in Gas Range - Convection - 6.0 cu. ft. - Stainless Steel",
+    "category": "appliances",
+    "subcategory": "gas stove",
+    "discount": 90,
+    "price": 15000,
+    "stock": 10,
+    "image_url": "https://cdn.rona.ca/images/22945277c_L.jpg"
+  },
+  {
+    "product_name": "Samsung 36 in. Gas Cooktop in Stainless Steel with 5-Burners NA36R5310FS",
+    "category": "appliances",
+    "subcategory": "gas stove",
+    "discount": 80,
+    "price": 10000,
+    "stock": 30,
+    "image_url": "https://images.thdstatic.com/productImages/0fb19156-79a7-4732-8495-62ab033fe1ec/svn/stainless-steel-samsung-gas-cooktops-na36r5310fs-64_600.jpg"
+  },
+  {
+    "product_name": "Usha Kitchen Exhaust Fan",
+    "category": "appliances",
+    "subcategory": "exhaust fan",
+    "discount": 50,
+    "price": 3000,
+    "stock": 30,
+    "image_url": "https://m.media-amazon.com/images/I/81knV7hkZQL._SL1500_.jpg"
+  },
+  {
+    "product_name": "Orient Electric Smart Air 150 mm Exhaust Fan (White)",
+    "category": "appliances",
+    "subcategory": "exhaust fan",
+    "discount": 60,
+    "price": 2000,
+    "stock": 30,
+    "image_url": "https://uoons.com/assets/product_image/4e5e1d69417ca39662eb0e9a6408dd3a.jpg"
+  },
+  {
+    "product_name": "Havells Pacer 1400mm Ceiling Fan (Brown)",
+    "category": "appliances",
+    "subcategory": "fan",
+    "discount": 20,
+    "price": 1000,
+    "stock": 30,
+    "image_url": "https://m.media-amazon.com/images/I/31iVcLXkPcL.jpg"
+  },
+  {
+    "product_name": "Bajaj-regal-gold-4-blade-ceiling-fan",
+    "category": "appliances",
+    "subcategory": "fan",
+    "discount": 10,
+    "price": 1000,
+    "stock": 30,
+    "image_url": "https://www.compareprix.in/images/product/large/bajaj-regal-gold-4-blade-ceiling-fan-large.jpeg"
+  },
+  {
+    "product_name": "Samsung 1.5 Ton 3 Star Inverter Split AC",
+    "category": "appliances",
+    "subcategory": "ac",
+    "discount": 15,
+    "price": 30000,
+    "stock": 30,
+    "image_url": "https://m.media-amazon.com/images/I/71i-x-lFgjL._SX679_.jpg"
+  },
+  {
+    "product_name": "Carrier 2 Ton 5 Star Inverter Split AC",
+    "category": "appliances",
+    "subcategory": "ac",
+    "discount": 25,
+    "price": 25000,
+    "stock": 3,
+    "image_url": "https://m.media-amazon.com/images/I/61qAOpxo8wL._SX679_.jpg"
+  },
+  {
+    "product_name": "Odacio Dlx Cherry Red 550W Juicer Mixer Grinder",
+    "category": "appliances",
+    "subcategory": "mixer grinder",
+    "discount": 55,
+    "price": 2000,
+    "stock": 3,
+    "image_url": "https://www.maharajawhiteline.com/assests/product-images/enlarge-image/5200100959.jpg"
+  },
+  {
+    "product_name": "Bajaj-hexagrind-600-w-mixer-grinder",
+    "category": "appliances",
+    "subcategory": "mixer grinder",
+    "discount": 40,
+    "price": 3000,
+    "stock": 3,
+    "image_url": "https://www.compareprix.in/images/product/large/bajaj-hexagrind-600-w-mixer-grinder-large.jpg"
+  },
+  {
+    "product_name": "USHA Quartz Room Heater with Overheating Protection",
+    "category": "appliances",
+    "subcategory": "heater",
+    "discount": 70,
+    "price": 5000,
+    "stock": 3,
+    "image_url": "https://m.media-amazon.com/images/I/91QD2VbJL-L._SX425_.jpg"
+  },
+  {
+    "product_name": "Hologen Room Heater",
+    "category": "appliances",
+    "subcategory": "heater",
+    "discount": 90,
+    "price": 4000,
+    "stock": 3,
+    "image_url": "https://5.imimg.com/data5/XH/WY/HZ/SELLER-92943367/room-heater-500x500.jpg"
+  },
+  {
+    "product_name": "INALSA Vacuum Cleaner",
+    "category": "appliances",
+    "subcategory": "vaccum cleaner",
+    "discount": 80,
+    "price": 10000,
+    "stock": 3,
+    "image_url": "https://m.media-amazon.com/images/I/61tH1osluML._SL1200_.jpg"
+  },
+  {
+    "product_name": "Bagless Vacuum Cleaner",
+    "category": "appliances",
+    "subcategory": "vaccum cleaner",
+    "discount": 60,
+    "price": 4000,
+    "stock": 50,
+    "image_url": "https://images.philips.com/is/image/philipsconsumer/4ab0349e31fc4fe582b2ad14004cbbc8?$jpglarge$&wid=960"
+  },
+  {
+    "product_name": "Samsung 32 Inches HD Ready LED Smart TV",
+    "category": "appliances",
+    "subcategory": "tv",
+    "discount": 20,
+    "price": 50000,
+    "stock": 50,
+    "image_url": "https://static.digit.in/product/bf6e3444c161bc8728b635b4a5f406b519b57ed8.jpeg?tr=n-product_detail_leader_thumb"
+  },
+  {
+    "product_name": "Samsung Crystal Display 4K UltraHD Smart TV",
+    "category": "appliances",
+    "subcategory": "tv",
+    "discount": 0,
+    "price": 40000,
+    "stock": 50,
+    "image_url": "https://i5.walmartimages.ca/images/Enlarge/302/589/6000201302589.jpg"
+  }
+]

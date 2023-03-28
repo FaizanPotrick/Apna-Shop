@@ -1,0 +1,182 @@
+[
+  {
+    "product_name": "SAMSUNG T350 Series Computer Monitor",
+    "category": "electronic",
+    "subcategory": "monitor",
+    "discount": 20,
+    "price": 6000,
+    "stock": 50,
+    "image_url": "https://m.media-amazon.com/images/I/61B8Lq5NXmL._AC_SY450_.jpg"
+  },
+  {
+    "product_name": "Apple LG UltraFine 4K Display",
+    "category": "electronic",
+    "subcategory": "monitor",
+    "discount": 60,
+    "price": 15000,
+    "stock": 20,
+    "image_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HMUA2_AV1?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1563859125527"
+  },
+  {
+    "product_name": "Rechargeable Wireless Gaming Mouse",
+    "category": "electronic",
+    "subcategory": "mouse",
+    "discount": 0,
+    "price": 600,
+    "stock": 50,
+    "image_url": "https://m.media-amazon.com/images/I/41P7GVRxXyL.jpg"
+  },
+  {
+    "product_name": "Logitech M170 Wireless Mouse",
+    "category": "electronic",
+    "subcategory": "mouse",
+    "discount": 5,
+    "price": 800,
+    "stock": 50,
+    "image_url": "https://www.vishalperipherals.in/image/cache/catalog/11900K/SSA/SK1/KLA/i111-1500x1500.jpg"
+  },
+  {
+    "product_name": "Logitech Keyboard Wired USB, AZERTY Black",
+    "category": "electronic",
+    "subcategory": "keyboard",
+    "discount": 3,
+    "price": 1000,
+    "stock": 50,
+    "image_url": "https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,h_843,q_auto,w_1500/c_pad,h_843,w_1500/F7950933-01?pgw=1&pgwact=1"
+  },
+  {
+    "product_name": "Magic Keyboard with Touch ID and Numeric Keypad for Mac models with Apple silicon",
+    "category": "electronic",
+    "subcategory": "keyboard",
+    "discount": 0,
+    "price": 600,
+    "stock": 50,
+    "image_url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MMMR3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1645719947833"
+  },
+  {
+    "product_name": "SEVEN IT Archer C20 AC750 Wireless Dual Band Router",
+    "category": "electronic",
+    "subcategory": "router",
+    "discount": 25,
+    "price": 30000,
+    "stock": 0,
+    "image_url": "https://m.media-amazon.com/images/I/418lS2CB2dL.jpg"
+  },
+  {
+    "product_name": "Tp-link Router",
+    "category": "electronic",
+    "subcategory": "router",
+    "discount": 25,
+    "price": 1800,
+    "stock": 5,
+    "image_url": "https://rukminim2.flixcart.com/image/612/612/router/y/3/m/tp-link-tl-wr940n-450mbps-wireless-n-router-original-imaegn2fj5hkz57x.jpeg?q=70"
+  },
+  {
+    "product_name": "Microsoft Surface Laptop",
+    "category": "electronic",
+    "subcategory": "laptop",
+    "discount": 15,
+    "price": 70000,
+    "stock": 5,
+    "image_url": "https://m.media-amazon.com/images/I/81KoSSAwH2L._SL1500_.jpg"
+  },
+  {
+    "product_name": "Samsung Galaxy Book Flex 13.3 Laptop",
+    "category": "electronic",
+    "subcategory": "laptop",
+    "discount": "10",
+    "price": "50000",
+    "stock": "5",
+    "image_url": "https://m.media-amazon.com/images/I/819QD8+XiFL._AC_SL1500_.jpg"
+  },
+  {
+    "product_name": "Apple AirPods Pro",
+    "category": "electronic",
+    "subcategory": "airpod",
+    "discount": 50,
+    "price": 3000,
+    "stock": 2,
+    "image_url": "https://m.media-amazon.com/images/I/71zny7BTRlL._AC_SX342_.jpg"
+  },
+  {
+    "product_name": "Samsung Galaxy Buds",
+    "category": "electronic",
+    "subcategory": "airpod",
+    "discount": 50,
+    "price": 5000,
+    "stock": 5,
+    "image_url": "https://images.news18.com/ibnlive/uploads/2021/02/1612504035_samsung-galaxy-buds-pro-1.jpg"
+  },
+  {
+    "product_name": "Apple AirPods Max MGYN3HN/A",
+    "category": "electronic",
+    "subcategory": "headphone",
+    "discount": 50,
+    "price": 3000,
+    "stock": 5,
+    "image_url": "https://images.macrumors.com/t/1EQm84Shwcm0x_8uyJL6v5d_1C0=/800x0/smart/article-new/2020/05/airpods-wide.jpg?lossy"
+  },
+  {
+    "product_name": "Grey-iPhone 11-Headphones",
+    "category": "electronic",
+    "subcategory": "headphone",
+    "discount": 30,
+    "price": 1200,
+    "stock": 30,
+    "image_url": "https://as-images.apple.com/is/MJ6X3?wid=445&hei=445&fmt=jpeg&qlt=95&.v=1632179967000"
+  },
+  {
+    "product_name": "Earphones for All the Smartphones White Earphone Wired with Microphone",
+    "category": "electronic",
+    "subcategory": "earphone",
+    "discount": 50,
+    "price": 2000,
+    "stock": 50,
+    "image_url": "https://img.joomcdn.net/9d01197eebf48e17cc8a07335e43f4b9ca90c3b9_original.jpeg"
+  },
+  {
+    "product_name": "Iphone Earphone",
+    "category": "electronic",
+    "subcategory": "earphone",
+    "discount": 50,
+    "price": 2000,
+    "stock": 50,
+    "image_url": "https://images-na.ssl-images-amazon.com/images/I/41jHOtHFZXL.jpg"
+  },
+  {
+    "product_name": "Sony SRS-XB12 EXTRA BASS Portable Bluetooth Speaker SRSXB12/LZ",
+    "category": "electronic",
+    "subcategory": "bluetooth speaker",
+    "discount": 30,
+    "price": 2000,
+    "stock": 50,
+    "image_url": "https://www.bhphotovideo.com/images/images2000x2000/sony_srsxb12_l_srs_xb12_extra_bass_portable_1475299.jpg"
+  },
+  {
+    "product_name": "Sony-Portable Bluetooth Speaker",
+    "category": "electronic",
+    "subcategory": "bluetooth speaker",
+    "discount": 30,
+    "price": 2000,
+    "stock": 50,
+    "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6458/6458542_sd.jpg"
+  },
+  {
+    "product_name": "Gaming PC Build",
+    "category": "electronic",
+    "subcategory": "pc",
+    "discount": 20,
+    "price": 90000,
+    "stock": 5,
+    "image_url": "https://cdn-bnofo.nitrocdn.com/YCOqbulOWPTbigaUOflqfvBCmkFuxfWf/assets/static/optimized/rev-c69c7bf/wp-content/uploads/2019/04/Phanteks-p600s-1106x1200.jpg"
+  },
+  {
+    "product_name": "Tower PCs",
+    "category": "electronic",
+    "subcategory": "pc",
+    "discount": 0,
+    "price": 40000,
+    "stock": 30,
+    "image_url": "https://images-eu.ssl-images-amazon.com/images/I/41lWTNCKJqL._AC._SR360,460.jpg"
+  }
+]

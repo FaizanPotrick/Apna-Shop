@@ -1,0 +1,182 @@
+[
+    {
+        "product_name": "Samsung Galaxy S22",
+        "category": "mobiles",
+        "subcategory": "samsung",
+        "discount": 30,
+        "price": 70000,
+        "stock": 20,
+        "image_url": "https://www.oled-info.com/files/Samsung-Galaxy-S22-Ultra.jpg"
+    },
+    {
+        "product_name": "Samsung Galaxy M32",
+        "category": "mobiles",
+        "subcategory": "samsung",
+        "discount": 25,
+        "price": 60000,
+        "stock": 20,
+        "image_url": "https://m.media-amazon.com/images/I/41ZGJxnJu1S.jpg"
+    },
+    {
+        "product_name": "Samsung Galaxy M12",
+        "category": "mobiles",
+        "subcategory": "samsung",
+        "discount": 10,
+        "price": 50000,
+        "stock": 20,
+        "image_url": "https://m.media-amazon.com/images/I/71r69Y7BSeL._SL1500_.jpg"
+    },
+    {
+        "product_name": "Samsung Galaxy A03s",
+        "category": "mobiles",
+        "subcategory": "samsung",
+        "discount": 40,
+        "price": 70000,
+        "stock": 20,
+        "image_url": "https://m.media-amazon.com/images/I/91PCzkdmUwL._SY445_.jpg"
+    },
+    {
+        "product_name": "SAMSUNG Galaxy F23 5G",
+        "category": "mobiles",
+        "subcategory": "samsung",
+        "discount": 30,
+        "price": 60000,
+        "stock": 20,
+        "image_url": "https://rukminim1.flixcart.com/image/312/312/l0sgyvk0/mobile/f/v/c/-original-imagcg22pf79cgau.jpeg?q=70"
+    },
+    {
+        "product_name": "OPPO F17 Pro",
+        "category": "mobiles",
+        "subcategory": "oppo",
+        "discount": 10,
+        "price": 30000,
+        "stock": 20,
+        "image_url": "https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/f17-pro/navigation/F17%20pro-navigation-blue-v2.png"
+    },
+    {
+        "product_name": "Oppo AX5s",
+        "category": "mobiles",
+        "subcategory": "oppo",
+        "discount": 30,
+        "price": 60000,
+        "stock": 20,
+        "image_url": "https://img.giznext.com/assets/model/9/11601/oppo-mobiles-oppo-ax5s-1626947112.webp"
+    },
+    {
+        "product_name": "Oppo F19s",
+        "category": "mobiles",
+        "subcategory": "oppo",
+        "discount": 15,
+        "price": 50000,
+        "stock": 20,
+        "image_url": "https://d2xamzlzrdbdbn.cloudfront.net/products/9138f407-bcbb-4330-a990-dec3dfdb071221271201_416x416.jpg"
+    },
+    {
+        "product_name": "OPPO A72 5G",
+        "category": "mobiles",
+        "subcategory": "oppo",
+        "discount": 5,
+        "price": 40000,
+        "stock": 20,
+        "image_url": "https://assets.mspimages.in/c/tr:w-375,h-300,c-at_max/16603-88-1.jpg"
+    },
+    {
+        "product_name": "Oppo A55",
+        "category": "mobiles",
+        "subcategory": "oppo",
+        "discount": 2,
+        "price": 30000,
+        "stock": 20,
+        "image_url": "https://www.sargam.in/media/catalog/product/cache/52c3474c27fbdcab744f9fdf13af4c52/5/8/58692.jpg"
+    },
+    {
+        "product_name": "Apple iPhone 11",
+        "category": "mobiles",
+        "subcategory": "apple",
+        "discount": 10,
+        "price": 90000,
+        "stock": 20,
+        "image_url": "https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-1.jpg"
+    },
+    {
+        "product_name": "Apple iPhone 13",
+        "category": "mobiles",
+        "subcategory": "apple",
+        "discount": 10,
+        "price": 150000,
+        "stock": 20,
+        "image_url": "https://images.news18.com/ibnlive/uploads/2021/10/apple-iphone-13-pro-review-16335346624x3.jpeg"
+    },
+    {
+        "product_name": "Apple iPhone 7",
+        "category": "mobiles",
+        "subcategory": "apple",
+        "discount": 10,
+        "price": 30000,
+        "stock": 20,
+        "image_url": "https://www.livekarts.com/wp-content/uploads/2021/02/iphone-7-refurbisshed2.jpg"
+    },
+    {
+        "product_name": "Iphone 7",
+        "category": "mobiles",
+        "subcategory": "apple",
+        "discount": 10,
+        "price": 30000,
+        "stock": 20,
+        "image_url": "https://cdn.vox-cdn.com/thumbor/gXu1Auf-0AfCLjpTr0EDXwzqIvA=/2x0:899x598/1200x800/filters:focal(2x0:899x598)/cdn.vox-cdn.com/imported_assets/951965/iPhone4s_hands_on11_gallery_post.jpg"
+    },
+    {
+        "product_name": "Iphone 11",
+        "category": "mobiles",
+        "subcategory": "apple",
+        "discount": 10,
+        "price": 92000,
+        "stock": 20,
+        "image_url": "https://pkgator.com/wp-content/uploads/2021/09/product_783_3_thumb_c86e0611-b00a-40cb-b3e5-cee5012d953a.jpg"
+    },
+    {
+        "product_name": "Redmi Note 10",
+        "category": "mobiles",
+        "subcategory": "redmi",
+        "discount": 30,
+        "price": 70000,
+        "stock": 20,
+        "image_url": "https://i02.appmifile.com/998_operator_in/12/08/2021/3c3be7deaa0112fa9c5c4c0c3e1da35d.png"
+    },
+    {
+        "product_name": "Redmi 9 Activ",
+        "category": "mobiles",
+        "subcategory": "redmi",
+        "discount": 30,
+        "price": 60000,
+        "stock": 20,
+        "image_url": "https://m.media-amazon.com/images/I/91kAtEXPIeL._SL1500_.jpg"
+    },
+    {
+        "product_name": "Xiaomi Redmi Note 11S",
+        "category": "mobiles",
+        "subcategory": "redmi",
+        "discount": 30,
+        "price": 50000,
+        "stock": 20,
+        "image_url": "https://static.toiimg.com/thumb/resizemode-4,msid-89454797,imgsize-200,width-1200/89454797.jpg"
+    },
+    {
+        "product_name": "HUAWEI Mate X2",
+        "category": "mobiles",
+        "subcategory": "huawei",
+        "discount": 15,
+        "price": 30000,
+        "stock": 20,
+        "image_url": "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/mate-x2/img/kv/huawei-mate-x2-kv@2x.jpg"
+    },
+    {
+        "product_name": "Huawei P50",
+        "category": "mobiles",
+        "subcategory": "huawei",
+        "discount": 10,
+        "price": 20000,
+        "stock": 20,
+        "image_url": "https://www.zdnet.com/a/img/resize/7e86704fab29add48565f80d4b3180332920f291/2022/01/26/e3c9eb3b-85cd-457c-9702-72b4efe3f82e/huawei-p50-pro-thumb.jpg?width=1200&height=900&fit=crop&auto=webp"
+    }
+]

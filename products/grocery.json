@@ -1,0 +1,182 @@
+[
+  {
+    "product_name": "Apple",
+    "category": "grocery",
+    "subcategory": "fruits",
+    "discount": 0,
+    "price": 120,
+    "stock": 50,
+    "image_url": "https://minnetonkaorchards.com/wp-content/uploads/2021/04/Bright-Red-Apple.jpg.webp"
+  },
+  {
+    "product_name": "Mango",
+    "category": "grocery",
+    "subcategory": "fruits",
+    "discount": 0,
+    "price": 100,
+    "stock": 50,
+    "image_url": "https://www.plantgrower.org/uploads/6/5/5/4/65545169/mango_orig.jpg"
+  },
+  {
+    "product_name": "Banana",
+    "category": "grocery",
+    "subcategory": "fruits",
+    "discount": 0,
+    "price": 30,
+    "stock": 50,
+    "image_url": "https://www.gannett-cdn.com/-mm-/cec01b6067e6a621611069b751341797d19f809f/c=0-218-4288-2630/local/-/media/2017/04/26/Brevard/B9327244777Z.1_20170426084937_000_GI3I4LULC.1-0.jpg"
+  },
+  {
+    "product_name": "Orange",
+    "category": "grocery",
+    "subcategory": "fruits",
+    "discount": 0,
+    "price": 30,
+    "stock": 50,
+    "image_url": "https://media.istockphoto.com/photos/orange-picture-id185284489?k=20&m=185284489&s=612x612&w=0&h=LLY2os0YTG2uAzpBKpQZOAC4DGiXBt1jJrltErTJTKI="
+  },
+  {
+    "product_name": "Watermelon",
+    "category": "grocery",
+    "subcategory": "fruits",
+    "discount": 0,
+    "price": 40,
+    "stock": 50,
+    "image_url": "https://www.goldenmayura.com/wp-content/uploads/2021/02/71c6iPTvqML._SL1500_.jpg"
+  },
+  {
+    "product_name": "Chana Dal",
+    "category": "grocery",
+    "subcategory": "pulse",
+    "discount": 0,
+    "price": 50,
+    "stock": 50,
+    "image_url": "https://5.imimg.com/data5/DS/BW/MY-23257720/chana-dal-500x500.jpg"
+  },
+  {
+    "product_name": "Masoor Dal",
+    "category": "grocery",
+    "subcategory": "pulse",
+    "discount": 0,
+    "price": 90,
+    "stock": 50,
+    "image_url": "https://5.imimg.com/data5/NE/IK/MY-35436563/masoor-dal-lentils-500x500.jpg"
+  },
+  {
+    "product_name": "Moong Dal",
+    "category": "grocery",
+    "subcategory": "pulse",
+    "discount": 0,
+    "price": 80,
+    "stock": 50,
+    "image_url": "https://4.imimg.com/data4/EY/NY/MY-4387742/moong-dal-500x500.jpg"
+  },
+  {
+    "product_name": "Urad Dal",
+    "category": "grocery",
+    "subcategory": "pulse",
+    "discount": 0,
+    "price": 120,
+    "stock": 50,
+    "image_url": "https://3.imimg.com/data3/PC/FD/MY-4567113/urad-pulses-250x250.jpg"
+  },
+  {
+    "product_name": "Tuwar Dal",
+    "category": "grocery",
+    "subcategory": "pulse",
+    "discount": 0,
+    "price": 100,
+    "stock": 50,
+    "image_url": "https://grocimart.com/files/images/loose-toor-arhar-dal_15904091400.jpg"
+  },
+  {
+    "product_name": "Cheetos",
+    "category": "grocery",
+    "subcategory": "snacks",
+    "discount": 0,
+    "price": 10,
+    "stock": 50,
+    "image_url": "https://media.cnn.com/api/v1/images/stellar/prod/200407124921-cheetos-flamin.jpg?q=w_1600,h_900,x_0,y_0,c_fill"
+  },
+  {
+    "product_name": "Doritos",
+    "category": "grocery",
+    "subcategory": "snacks",
+    "discount": 0,
+    "price": 20,
+    "stock": 50,
+    "image_url": "https://hips.hearstapps.com/bpc.h-cdn.co/assets/16/28/1468514919-doritos-nacho-cheese.jpg"
+  },
+  {
+    "product_name": "Fretos",
+    "category": "grocery",
+    "subcategory": "snacks",
+    "discount": 0,
+    "price": 30,
+    "stock": 50,
+    "image_url": "https://www.eatthis.com/wp-content/uploads/sites/4/2019/01/fritos-original-corn-chips.jpg"
+  },
+  {
+    "product_name": "Lays",
+    "category": "grocery",
+    "subcategory": "snacks",
+    "discount": 0,
+    "price": 50,
+    "stock": 50,
+    "image_url": "https://static.boredpanda.com/blog/wp-content/uploads/2014/10/potato-chips-unusual-flavors-131__605.jpg"
+  },
+  {
+    "product_name": "Pringles",
+    "category": "grocery",
+    "subcategory": "snacks",
+    "discount": 0,
+    "price": 40,
+    "stock": 50,
+    "image_url": "https://i.pinimg.com/236x/04/15/14/041514978d46cdf210e1cff882dd2593.jpg"
+  },
+  {
+    "product_name": "Cabbage",
+    "category": "grocery",
+    "subcategory": "vegetables",
+    "discount": 0,
+    "price": 40,
+    "stock": 50,
+    "image_url": "https://www.kindpng.com/picc/m/158-1587732_fruits-vegetable-single-png-download-transparent-background-single.png"
+  },
+  {
+    "product_name": "Cucumber",
+    "category": "grocery",
+    "subcategory": "vegetables",
+    "discount": 0,
+    "price": 60,
+    "stock": 50,
+    "image_url": "https://www.pngitem.com/pimgs/m/51-517098_cool-cucumber-free-vegetables-clipart-fruit-names-a.png"
+  },
+  {
+    "product_name": "Carrot",
+    "category": "grocery",
+    "subcategory": "vegetables",
+    "discount": 0,
+    "price": 50,
+    "stock": 50,
+    "image_url": "https://media.istockphoto.com/photos/carrot-isolated-on-white-background-picture-id502379351?k=20&m=502379351&s=612x612&w=0&h=plBrG2HzWvBJmsNuNUpwVgxkfSYRCo4KvvIdE8CJRZ8="
+  },
+  {
+    "product_name": "Yellow Onion",
+    "category": "grocery",
+    "subcategory": "vegetables",
+    "discount": 0,
+    "price": 60,
+    "stock": 50,
+    "image_url": "https://t3.ftcdn.net/jpg/01/91/55/42/360_F_191554261_Kfn9mPkFP2lRmNuSkLkoe6yMnOdC1GUC.jpg"
+  },
+  {
+    "product_name": "Lady Finger",
+    "category": "grocery",
+    "subcategory": "vegetables",
+    "discount": 0,
+    "price": 40,
+    "stock": 50,
+    "image_url": "https://t3.ftcdn.net/jpg/00/93/87/58/360_F_93875874_u9pFhj8A6MNFchnUgNTAAAWnmIA4F4Y0.jpg"
+  }
+]
