@@ -50,14 +50,10 @@ function Login() {
         my="auto"
         p="xl"
         withBorder
-        sx={(theme) => {
-          return {
-            width: "100%",
-            maxWidth: "27rem",
-            [theme.fn.smallerThan("xs")]: {
-              marginInline: "1rem",
-            },
-          };
+        sx={{
+          width: "100%",
+          maxWidth: "27rem",
+          marginInline: "1rem",
         }}
       >
         <Title align="center" mb={20} weight={500}>
@@ -67,7 +63,7 @@ function Login() {
           onSubmit={form.onSubmit(async (val) => {
             setLoading(true);
             try {
-              await axios.post("/api/register", val);
+              await axios.post("/api/user", val);
               form.reset();
               Router.back();
               setLoading(false);
