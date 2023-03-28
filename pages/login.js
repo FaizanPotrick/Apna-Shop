@@ -38,7 +38,7 @@ function Login() {
         overlayBlur={1}
         loaderProps={{
           size: 40,
-          color: "teal",
+          color: "cyan",
           variant: "bars",
         }}
       />
@@ -123,7 +123,7 @@ function Login() {
               </Title>
             </Link>
           </div>
-          <Button type="submit" radius="md" fullWidth color="teal" mt={10}>
+          <Button type="submit" radius="md" fullWidth color="cyan" mt={10}>
             Login
           </Button>
         </form>
@@ -140,7 +140,7 @@ function Login() {
           Don&#39;t have an account?
           <Link href="/register">
             <Text
-              c="teal"
+              c="cyan"
               ml={4}
               sx={{
                 cursor: "pointer",

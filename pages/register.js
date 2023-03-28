@@ -81,7 +81,7 @@ function Register() {
         overlayBlur={1}
         loaderProps={{
           size: 40,
-          color: "teal",
+          color: "cyan",
           variant: "bars",
         }}
       />
@@ -218,7 +218,7 @@ function Register() {
               justifyContent: "flex-end",
             }}
           ></div>
-          <Button type="submit" radius="md" fullWidth color="teal" mt={20}>
+          <Button type="submit" radius="md" fullWidth color="cyan" mt={20}>
             Register
           </Button>
         </form>
@@ -235,7 +235,7 @@ function Register() {
           Have already an account?
           <Link href="/login">
             <Text
-              c="teal"
+              c="cyan"
               ml={4}
               sx={{
                 cursor: "pointer",

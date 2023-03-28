@@ -44,7 +44,7 @@ function ForgetPassword() {
         overlayBlur={1}
         loaderProps={{
           size: 40,
-          color: "teal",
+          color: "cyan",
           variant: "bars",
         }}
       />
@@ -132,7 +132,7 @@ function ForgetPassword() {
               withAsterisk
             />
           </Stack>
-          <Button type="submit" radius="md" fullWidth color="teal" mt={20}>
+          <Button type="submit" radius="md" fullWidth color="cyan" mt={20}>
             Submit
           </Button>
         </form>
