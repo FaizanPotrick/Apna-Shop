@@ -5,13 +5,10 @@ db();
 
 export default async (req, res) => {
   const { method } = req;
-  const { category, subcategory } = req.query;
+  const { product_id } = req.query;
   switch (method) {
     case "GET":
-      const response = await Product.find({
-        category: category,
-        subcategory: subcategory,
-      });
+      const response = await Product.findById(product_id);
       res.send(response);
       break;
   }

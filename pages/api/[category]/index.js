@@ -1,5 +1,5 @@
 import db from "../../../utils/db";
-import Products from "../../../models/Products";
+import Product from "../../../models/Product";
 
 db();
 
@@ -9,30 +9,17 @@ export default async (req, res) => {
   switch (method) {
     case "POST":
       try {
-        const response = await Products.create(req.body);
-        res.status(200).json({ success: true, response: response });
+        await Product.create(req.body);
+        res.send("Successfully added");
       } catch (error) {
-        res.status(400).json({ success: false });
+        res.status(400).send(error);
       }
       break;
     case "GET":
-      try {
-        const response = await Products.find({
-          category: category,
-        });
-        if (response.length === 0) {
-          res.status(404).json({
-            success: false,
-            message: "Page not found",
-          });
-        }
-        res.status(200).json({ success: true, response: response });
-      } catch (error) {
-        res
-          .status(500)
-          .json({ success: false, message: "Internal Server Error" });
-      }
-
+      const response = await Product.find({
+        category: category,
+      }).lean();
+      res.send(response);
       break;
   }
 };

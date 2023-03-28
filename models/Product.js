@@ -1,19 +1,17 @@
 const mongoose = require("mongoose");
 
 const ProductSchema = new mongoose.Schema({
-  productName: {
+  product_name: {
     type: String,
     required: true,
   },
   category: {
     type: String,
     required: true,
-    maxlength: 200,
   },
   subcategory: {
     type: String,
     required: true,
-    maxlength: 200,
   },
   discount: {
     type: Number,
@@ -23,16 +21,11 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  buyer: {
-    type: String,
-    required: true,
-    maxlength: 200,
-  },
-  avaliability: {
+  stock: {
     type: Number,
     required: true,
   },
-  productimage: {
+  image_url: {
     type: String,
     required: true,
   },
