@@ -11,6 +11,13 @@ export default async (req, res) => {
   const saltRounds = 15;
 
   switch (method) {
+    case "GET":
+      const { user_id } = req.cookies;
+      const user_response = await User.findById({
+        _id: user_id,
+      }).lean();
+      res.send(user_response.name);
+      break;
     case "POST":
       try {
         const email_check = await User.findOne({
