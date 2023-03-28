@@ -11,7 +11,7 @@ export default async (req, res) => {
       const response = await Product.find({
         category: category,
         subcategory: subcategory,
-      });
+      }).lean();
       res.send(response);
       break;
   }

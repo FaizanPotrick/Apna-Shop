@@ -8,7 +8,7 @@ export default async (req, res) => {
   const { product_id } = req.query;
   switch (method) {
     case "GET":
-      const response = await Product.findById(product_id);
+      const response = await Product.findById(product_id).lean();
       res.send(response);
       break;
   }
