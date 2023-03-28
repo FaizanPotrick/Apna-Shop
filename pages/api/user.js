@@ -2,28 +2,12 @@ import db from "../../utils/db";
 import User from "../../models/User";
 import Address from "../../models/Address";
 import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import cookie from "cookie";
 
 db();
 
 export default async (req, res) => {
   const { method } = req;
-  const {
-    name,
-    email_address,
-    type_of_user,
-    phone_number,
-    street,
-    landMark,
-    city,
-    district,
-    state,
-    country,
-    pinCode,
-    password,
-    cPassword,
-  } = req.body;
+  const { email_address, phone_number, password, cPassword } = req.body;
   const saltRounds = 15;
 
   switch (method) {
@@ -44,19 +28,16 @@ export default async (req, res) => {
           return res.status(400).json({
             password: "Invalid Password",
           });
-        const token = jwt.sign({ user_id: email_check._id.toString() });
-        res.setHeader(
-          "Set-Cookie",
-          cookie.serialize("token", token, {
-            maxAge: 60 * 60 * 24 * 7,
-            path: "/",
-          })
-        );
+        res.send(email_check._id);
       } catch (error) {
-        res.status(400).send("Invalid Request");
+        res.status(400).send(error.message);
       }
       break;
     case "PUT":
+      const {
+        name,
+        address: { street, landMark, city, district, state, country, pinCode },
+      } = req.body;
       try {
         const email_check = await User.findOne({
           email_address,
@@ -72,13 +53,12 @@ export default async (req, res) => {
         const user_response = await new User({
           name,
           email_address,
-          type_of_user,
           phone_number,
-          gst_number,
           password: bcrypt.hashSync(password, saltRounds),
         });
         const address_response = await new Address({
-          user_id: register._id,
+          user_id: user_response._id,
+          default: true,
           street,
           landMark,
           city,
@@ -92,46 +72,9 @@ export default async (req, res) => {
           address_response.validate(),
         ]);
         await Promise.all([user_response.save(), address_response.save()]);
-        const token = jwt.sign({ user_id: user_response._id.toString() });
-        res.setHeader(
-          "Set-Cookie",
-          cookie.serialize("token", token, {
-            maxAge: 60 * 60 * 24 * 7,
-            path: "/",
-          })
-        );
+        res.send(user_response._id);
       } catch (error) {
-        res.status(400).send("Invalid Request");
-      }
-      break;
-    case "DELETE":
-      try {
-        const email_check = await User.findOne({
-          email_address,
-        }).lean();
-        if (email_check === null)
-          return res.status(400).json({
-            email_address: "Invalid Email Address",
-          });
-        if (email_check.phone_number !== parseInt(phone_number))
-          return res.status(400).json({
-            phone_number: "Invalid Phone Number",
-          });
-        if (password !== cPassword)
-          return res.status(400).json({
-            cPassword: "Password didn't match",
-          });
-        await User.findOneAndUpdate(
-          { email_address },
-          {
-            $set: {
-              password: bcrypt.hashSync(password, saltRounds),
-            },
-          }
-        );
-        res.end();
-      } catch (error) {
-        res.status(400).send("Invalid Request");
+        res.status(400).send(error.message);
       }
       break;
   }

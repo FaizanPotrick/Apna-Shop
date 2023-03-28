@@ -14,6 +14,7 @@ import {
 } from "@mantine/core";
 import { useForm, isEmail, hasLength } from "@mantine/form";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 function Register() {
   const [loading, setLoading] = useState(false);
@@ -69,8 +70,10 @@ function Register() {
         { min: 6, max: 12 },
         "Password must be at least 6 characters long"
       ),
-      cPassword: (value, { values }) =>
-        value === values.password ? null : "Passwords do not match",
+      cPassword: hasLength(
+        { min: 6, max: 12 },
+        "Password must be at least 6 characters long"
+      ),
     },
   });
 
@@ -106,7 +109,8 @@ function Register() {
           onSubmit={form.onSubmit(async (val) => {
             setLoading(true);
             try {
-              await axios.put("/api/user", val);
+              const { data } = await axios.put("/api/user", val);
+              Cookies.set("user_id", data);
               form.reset();
               Router.back();
               setLoading(false);
