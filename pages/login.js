@@ -100,29 +100,6 @@ function Login() {
               withAsterisk
             />
           </Stack>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-            }}
-          >
-            <Link href="/forget_password">
-              <Title
-                c="gray"
-                mt={6}
-                order={6}
-                weight={400}
-                sx={{
-                  cursor: "pointer",
-                  ":hover": {
-                    textDecoration: "underline",
-                  },
-                }}
-              >
-                Forgot password?
-              </Title>
-            </Link>
-          </div>
           <Button type="submit" radius="md" fullWidth color="cyan" mt={10}>
             Login
           </Button>
