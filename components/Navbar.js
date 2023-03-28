@@ -48,7 +48,7 @@ function Navbar() {
   }, [router.isReady, Cookies.get("token"), isAlert]);
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark bg-dark px-5"
+      className="navbar navbar-expand-lg navbar-dark bg-dark px-5 w-100"
       style={{ height: "8vh", zIndex: 5 }}
     >
       <Link href="/">
