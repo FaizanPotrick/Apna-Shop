@@ -31,7 +31,7 @@ export default async (req, res) => {
       try {
         const email_check = await User.findOne({
           email_address,
-        });
+        }).lean();
         if (email_check === null)
           return res.status(400).json({
             email_address: "Invalid Email Address",
@@ -60,7 +60,7 @@ export default async (req, res) => {
       try {
         const email_check = await User.findOne({
           email_address,
-        });
+        }).lean();
         if (email_check !== null)
           return res.status(400).json({
             email_address: "Email Address already exists",
@@ -108,7 +108,7 @@ export default async (req, res) => {
       try {
         const email_check = await User.findOne({
           email_address,
-        });
+        }).lean();
         if (email_check === null)
           return res.status(400).json({
             email_address: "Invalid Email Address",

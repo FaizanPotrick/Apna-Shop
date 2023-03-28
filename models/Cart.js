@@ -2,53 +2,18 @@ const mongoose = require("mongoose");
 
 const CartSchema = new mongoose.Schema(
   {
-    auth: {
-      type: String,
-      required: true,
+    user_id: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: [true, "Please provide user id"],
     },
-    cart: [
-      {
-        id: {
-          type: String,
-          required: true,
-        },
-        productName: {
-          type: String,
-          required: true,
-        },
-        quantity: {
-          type: Number,
-          required: true,
-        },
-        category: {
-          type: String,
-          required: true,
-          maxlength: 200,
-        },
-        subCategory: {
-          type: String,
-          required: true,
-          maxlength: 200,
-        },
-        discount: {
-          type: Number,
-          required: true,
-        },
-        price: {
-          type: Number,
-          required: true,
-        },
-        seller: {
-          type: String,
-          required: true,
-          maxlength: 200,
-        },
-        productImage: {
-          type: String,
-          required: true,
-        },
-      },
-    ],
+    product_id: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: [true, "Please provide product id"],
+    },
+    quantity: {
+      type: Number,
+      required: [true, "Please provide quantity"],
+    },
   },
   { timestamps: true }
 );
