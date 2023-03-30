@@ -49,13 +49,13 @@ function ProductCard({ e }) {
       key={e._id}
       sx={{
         width: "100%",
-        maxWidth: "350px",
+        maxWidth: "300px",
       }}
     >
       <Card.Section>
         <Image
           src={e.image_url}
-          height={250}
+          height={200}
           alt="Norway"
           withPlaceholder
           sx={{
@@ -69,8 +69,8 @@ function ProductCard({ e }) {
       </Card.Section>
       <Group position="apart" mt="md" mb="xs">
         <Text weight={500}>
-          {e.product_name.length > 20
-            ? `${e.product_name.substring(0, 20)}...`
+          {e.product_name.length > 15
+            ? `${e.product_name.substring(0, 15)}...`
             : e.product_name}
         </Text>
         <Badge
