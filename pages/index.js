@@ -4,7 +4,6 @@ import Context from "../components/Context";
 import ProductCard from "../components/ProductCard";
 import Head from "next/head";
 import {
-  Container,
   createStyles,
   Paper,
   Button,
@@ -16,6 +15,7 @@ import {
 import { Carousel } from "@mantine/carousel";
 import { useMediaQuery } from "@mantine/hooks";
 import axios from "axios";
+import Router from "next/router";
 
 const useStyles = createStyles(() => ({
   card: {
@@ -47,7 +47,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Container size="xl">
+    <div>
       <LoadingOverlay
         visible={loading}
         overlayBlur={1}
@@ -109,7 +109,6 @@ export default function Home() {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "start",
           gap: "1rem",
         }}
       >
@@ -117,6 +116,6 @@ export default function Home() {
           return <ProductCard e={e} key={e._id} />;
         })}
       </div>
-    </Container>
+    </div>
   );
 }
