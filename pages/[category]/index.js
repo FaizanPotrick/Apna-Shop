@@ -1,93 +1,66 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/router";
-import Router from "next/router";
 import ProductCard from "../../components/ProductCard";
-import { useContext } from "react";
 import Context from "../../components/Context";
+import { LoadingOverlay, Container, Button, Group, Title } from "@mantine/core";
 import Head from "next/head";
+import axios from "axios";
 
-function Index(props) {
-  const context = useContext(Context);
-  const { setIsError, data } = context;
-  const router = useRouter();
-  const { category } = router.query;
-  const [categoryProduct] = useState(() => (props.pageFound ? props.data : []));
-  if (!props.pageFound) {
-    setIsError({
-      errorPage: true,
-      status: props.status,
-      message: props.message,
-    });
-  }
-  const [subCategoryList] = useState(
-    data.filter((e) => {
-      return e.CategoryName === category;
-    })
-  );
+function Index() {
+  const [props, setProps] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const { data } = useContext(Context);
+  const { category } = useRouter().query;
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      const { data: Data } = await axios.get(`/api/${category}`);
+      setProps(Data);
+      setLoading(false);
+    })();
+  }, [category]);
+
   return (
-    <div className="container">
+    <Container size="xl">
+      <LoadingOverlay
+        visible={loading}
+        overlayBlur={1}
+        loaderProps={{
+          size: 40,
+          color: "cyan",
+          variant: "bars",
+        }}
+      />
       <Head>
         <title>Apna Shop | {category}</title>
       </Head>
-      <h4 className="mt-4">{category}</h4>
-      <div className="row">
-        {subCategoryList.map((e) => {
-          return e.SubCategory.map((f) => {
-            return (
-              <div className="col-lg-2 col-md-4 col-sm-6 col-6" key={f}>
-                <button
-                  className="btn rounded shadow my-2 container btn-warning btn-lg"
-                  onClick={() => {
-                    Router.push(`/${e.CategoryName}/${f}`);
-                  }}
+      <Title className="mt-4 mb-2 text-capitalize">{category}</Title>
+      <Group className="mb-4" grow>
+        {data.map((e) => {
+          if (e.CategoryName === category) {
+            return e.SubCategory.map((sub) => {
+              return (
+                <Button
+                  color="cyan"
+                  component="a"
+                  href={`/${category}/${sub}`}
+                  size="lg"
                 >
-                  {f}
-                </button>
-              </div>
-            );
-          });
+                  {sub}
+                </Button>
+              );
+            });
+          }
         })}
-      </div>
-      <h5 className="mt-4">Total Result - {categoryProduct.length}</h5>
+      </Group>
       <div className="row">
-        {categoryProduct.map((e) => {
+        {props.map((e) => {
           return <ProductCard e={e} key={e._id} />;
         })}
       </div>
-    </div>
+    </Container>
   );
-}
-export async function getServerSideProps(context) {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_URL}/api/${context.query.category}`
-  );
-  const data = await res.json();
-  if (data.success === false && res.status === 500) {
-    return {
-      props: {
-        pageFound: false,
-        status: res.status,
-        message: data.message,
-      },
-    };
-  }
-  if (data.success === false && res.status === 404) {
-    return {
-      props: {
-        pageFound: false,
-        status: res.status,
-        message: data.message,
-      },
-    };
-  }
-  if (data.success === true && res.status === 200) {
-    return {
-      props: {
-        pageFound: true,
-        data: data.response,
-      },
-    };
-  }
 }
 
 export default Index;

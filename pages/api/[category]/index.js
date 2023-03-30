@@ -5,7 +5,6 @@ db();
 
 export default async (req, res) => {
   const { method } = req;
-  const { category } = req.query;
   switch (method) {
     case "POST":
       try {
@@ -16,6 +15,7 @@ export default async (req, res) => {
       }
       break;
     case "GET":
+      const { category } = req.query;
       const response = await Product.find({
         category: category,
       }).lean();

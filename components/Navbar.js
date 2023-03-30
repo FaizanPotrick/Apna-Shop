@@ -52,7 +52,12 @@ function Navbar() {
             Apna Shop
           </Title>
         </Anchor>
-        <form>
+        <form
+          style={{
+            width: "100%",
+            maxWidth: "500px",
+          }}
+        >
           <TextInput
             placeholder="Search"
             icon={
