@@ -18,23 +18,9 @@ const OrderSchema = new mongoose.Schema(
       type: Number,
       required: [true, "Please provide quantity"],
     },
-    address_id: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: [true, "Please provide address id"],
-    },
     price: {
       type: Number,
       required: [true, "Please provide price"],
-    },
-    payment: {
-      mode: {
-        type: String,
-        required: [true, "Please provide payment mode"],
-      },
-      status: {
-        type: String,
-        required: [true, "Please provide payment status"],
-      },
     },
   },
   { timestamps: true }
