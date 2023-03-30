@@ -46,6 +46,7 @@ function Index() {
                   component="a"
                   href={`/${category}/${sub}`}
                   size="lg"
+                  className="text-capitalize"
                 >
                   {sub}
                 </Button>

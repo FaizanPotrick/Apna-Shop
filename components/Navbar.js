@@ -81,18 +81,14 @@ function Navbar() {
             required
           />
         </form>
-        {isLogin ? (
           <Group>
-            <Button color="cyan" component="a" href="/orders">
+            {isLogin && <Button color="cyan" component="a" href="/orders">
               Orders
-            </Button>
-            <Button color="cyan" component="a" href="/cart">
+            </Button>}
+            {isLogin && <Button color="cyan" component="a" href="/cart">
               Cart
-            </Button>
-            <Button color="cyan" component="a" href="/address">
-              Address
-            </Button>
-            <Button
+            </Button>}
+            {isLogin && <Button
               variant="default"
               onClick={() => {
                 setIsLogin(false);
@@ -100,18 +96,14 @@ function Navbar() {
               }}
             >
               Log out
-            </Button>
-          </Group>
-        ) : (
-          <Group>
-            <Button variant="default" component="a" href="/login">
+            </Button>}
+            {!isLogin && <Button variant="default" component="a" href="/login">
               Log in
-            </Button>
-            <Button color="cyan" component="a" href="/register">
+            </Button>}
+            {!isLogin && <Button color="cyan" component="a" href="/register">
               Sign up
-            </Button>
+            </Button>}
           </Group>
-        )}
       </Group>
     </Header>
   );

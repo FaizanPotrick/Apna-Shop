@@ -74,12 +74,7 @@ function MyApp({ Component, pageProps }) {
       CategoryImage: "appliances.jpg",
     },
   ];
-  const images = [
-    "electronic.jpg",
-    "clothes.jpg",
-    "grocery.jpg",
-    "jwellery.jpg",
-  ];
+
   return (
     <Context.Provider
       value={{
@@ -87,7 +82,6 @@ function MyApp({ Component, pageProps }) {
         setIsAlert,
         setIsError,
         data,
-        images,
         isLogin,
         setIsLogin,
       }}
