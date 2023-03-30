@@ -55,7 +55,14 @@ function Index() {
           }
         })}
       </Group>
-      <div className="row">
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "1rem",
+        }}
+      >
         {props.map((e) => {
           return <ProductCard e={e} key={e._id} />;
         })}
