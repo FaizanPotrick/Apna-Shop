@@ -153,6 +153,13 @@ function Register() {
               withAsterisk
             />
             <PasswordInput
+              placeholder="Password"
+              label="Password"
+              {...form.getInputProps("password")}
+              withAsterisk
+              autoComplete="off"
+            />
+            <PasswordInput
               placeholder="Confirm Password"
               label="Confirm Password"
               {...form.getInputProps("cPassword")}
