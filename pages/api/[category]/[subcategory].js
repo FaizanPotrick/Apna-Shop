@@ -1,5 +1,5 @@
-import db from "../../../../utils/db";
-import Product from "../../../../models/Product";
+import db from "../../../utils/db";
+import Product from "../../../models/Product";
 
 db();
 

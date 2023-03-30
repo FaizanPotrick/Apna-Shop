@@ -59,11 +59,7 @@ function ProductCard({ e }) {
           alt="Norway"
           withPlaceholder
           sx={{
-            cursor: "pointer",
             backgroundSize: "cover",
-          }}
-          onClick={() => {
-            Router.push(`/${e.category}/${e.subcategory}/${e._id}`);
           }}
         />
       </Card.Section>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import ProductCard from "../../../components/ProductCard";
+import ProductCard from "../../components/ProductCard";
 import Head from "next/head";
 import { LoadingOverlay, Container, Title } from "@mantine/core";
 import axios from "axios";
