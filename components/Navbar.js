@@ -15,9 +15,8 @@ import { IconSearch, IconShoppingCart } from "@tabler/icons-react";
 
 function Navbar() {
   const { isLogin, setIsLogin } = useContext(Context);
-  const router = useRouter();
-  const { searching } = router.query;
-  const [search, setSearch] = useState(searching);
+  const { searching } = useRouter().query;
+  const [search, setSearch] = useState(searching || "");
 
   return (
     <Header
@@ -38,6 +37,7 @@ function Navbar() {
       >
         <Anchor
           className="d-flex justify-content-center align-items-center"
+          href="/"
           sx={{
             cursor: "pointer",
             ":hover": {
@@ -57,21 +57,14 @@ function Navbar() {
             width: "100%",
             maxWidth: "500px",
           }}
+          onSubmit={(e) => {
+            e.preventDefault();
+            Router.push(`/search?searching=${search}`);
+          }}
         >
           <TextInput
             placeholder="Search"
-            icon={
-              <IconSearch
-                size="1rem"
-                stroke={1.5}
-                type="submit"
-                onClick={async (e) => {
-                  e.preventDefault();
-                  await Router.push(`/search?searching=${search}`);
-                  Router.reload();
-                }}
-              />
-            }
+            icon={<IconSearch size="1rem" stroke={1.5} type="submit" />}
             onChange={(e) => setSearch(e.target.value)}
             value={search}
             sx={{
@@ -81,14 +74,19 @@ function Navbar() {
             required
           />
         </form>
-          <Group>
-            {isLogin && <Button color="cyan" component="a" href="/orders">
+        <Group>
+          {isLogin && (
+            <Button color="cyan" component="a" href="/orders">
               Orders
-            </Button>}
-            {isLogin && <Button color="cyan" component="a" href="/cart">
+            </Button>
+          )}
+          {isLogin && (
+            <Button color="cyan" component="a" href="/cart">
               Cart
-            </Button>}
-            {isLogin && <Button
+            </Button>
+          )}
+          {isLogin && (
+            <Button
               variant="default"
               onClick={() => {
                 setIsLogin(false);
@@ -96,14 +94,19 @@ function Navbar() {
               }}
             >
               Log out
-            </Button>}
-            {!isLogin && <Button variant="default" component="a" href="/login">
+            </Button>
+          )}
+          {!isLogin && (
+            <Button variant="default" component="a" href="/login">
               Log in
-            </Button>}
-            {!isLogin && <Button color="cyan" component="a" href="/register">
+            </Button>
+          )}
+          {!isLogin && (
+            <Button color="cyan" component="a" href="/register">
               Sign up
-            </Button>}
-          </Group>
+            </Button>
+          )}
+        </Group>
       </Group>
     </Header>
   );
