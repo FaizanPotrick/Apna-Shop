@@ -22,7 +22,12 @@ function Index() {
   }, [category]);
 
   return (
-    <Container size="xl">
+    <Container
+      size="xl"
+      sx={{
+        width: "100%",
+      }}
+    >
       <LoadingOverlay
         visible={loading}
         overlayBlur={1}

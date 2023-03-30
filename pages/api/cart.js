@@ -10,7 +10,27 @@ export default async (req, res) => {
   const { user_id } = req.cookies;
   switch (method) {
     case "GET":
-      const response = await Cart.find({ user_id }).lean();
+      const response = await Cart.aggregate([
+        {
+          $addFields: {
+            user_id: { $toString: "$user_id" },
+          },
+        },
+        {
+          $match: { user_id },
+        },
+        {
+          $lookup: {
+            from: "products",
+            localField: "product_id",
+            foreignField: "_id",
+            as: "product",
+          },
+        },
+        {
+          $unwind: "$product",
+        },
+      ]);
       res.send(response);
       break;
     case "POST":
@@ -53,13 +73,14 @@ export default async (req, res) => {
             $set: { quantity: quantity },
           }
         );
-        res.end();
+        res.send();
       } catch (error) {
         res.status(400).send(error.message);
       }
       break;
     case "DELETE":
       try {
+        const { product_id } = req.query;
         await Cart.findOneAndRemove({ user_id, product_id });
         res.end();
       } catch (error) {
