@@ -37,7 +37,7 @@ function Navbar() {
       >
         <Anchor
           className="d-flex justify-content-center align-items-center"
-          href="/"
+          onClick={() => Router.push("/")}
           sx={{
             cursor: "pointer",
             ":hover": {
@@ -76,12 +76,12 @@ function Navbar() {
         </form>
         <Group>
           {isLogin && (
-            <Button color="cyan" component="a" href="/orders">
+            <Button color="cyan" onClick={() => Router.push("/orders")}>
               Orders
             </Button>
           )}
           {isLogin && (
-            <Button color="cyan" component="a" href="/cart">
+            <Button color="cyan" onClick={() => Router.push("/cart")}>
               Cart
             </Button>
           )}
@@ -97,12 +97,12 @@ function Navbar() {
             </Button>
           )}
           {!isLogin && (
-            <Button variant="default" component="a" href="/login">
+            <Button variant="default" onClick={() => Router.push("/login")}>
               Log in
             </Button>
           )}
           {!isLogin && (
-            <Button color="cyan" component="a" href="/register">
+            <Button color="cyan" onClick={() => Router.push("/register")}>
               Sign up
             </Button>
           )}

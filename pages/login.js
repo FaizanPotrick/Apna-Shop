@@ -36,7 +36,7 @@ function Login() {
 
   useEffect(() => {
     if (isLogin) {
-      Router.back();
+      Router.push("/");
     }
   }, [isLogin]);
 
@@ -76,7 +76,7 @@ function Login() {
               Cookies.set("user_id", data);
               form.reset();
               setIsLogin(true);
-              Router.back();
+              Router.push("/");
               setLoading(false);
             } catch (error) {
               setLoading(false);

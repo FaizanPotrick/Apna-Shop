@@ -15,15 +15,20 @@ import Head from "next/head";
 import axios from "axios";
 
 function Cart() {
-  const { setIsAlert } = useContext(Context);
+  const { setIsAlert, isLogin } = useContext(Context);
   const [loading, setLoading] = useState(false);
   const [props, setProps] = useState([]);
+
+  useEffect(() => {
+    if (!isLogin) {
+      Router.push("/");
+    }
+  }, [isLogin]);
 
   useEffect(() => {
     (async () => {
       setLoading(true);
       const { data: Data } = await axios.get("/api/cart");
-      console.log(Data);
       setProps(Data);
       setLoading(false);
     })();
@@ -113,61 +118,58 @@ function Cart() {
       >
         {props.map((e) => {
           return (
-            <>
-              <Card
-                shadow="sm"
-                padding="lg"
-                radius="md"
-                withBorder
-                key={e._id}
-                sx={{
-                  width: "100%",
-                  maxWidth: "300px",
-                }}
-              >
-                <Card.Section>
-                  <Image
-                    src={e.product.image_url}
-                    height={200}
-                    alt="Norway"
-                    withPlaceholder
-                    sx={{
-                      backgroundSize: "cover",
-                    }}
-                  />
-                </Card.Section>
-
-                <Text weight={500}>
-                  {e.product.product_name.length > 30
-                    ? `${e.product.product_name.substring(0, 30)}...`
-                    : e.product.product_name}
+            <Card
+              shadow="sm"
+              padding="lg"
+              radius="md"
+              withBorder
+              key={e._id}
+              sx={{
+                width: "100%",
+                maxWidth: "300px",
+              }}
+            >
+              <Card.Section>
+                <Image
+                  src={e.product.image_url}
+                  height={200}
+                  alt="Norway"
+                  withPlaceholder
+                  sx={{
+                    backgroundSize: "cover",
+                  }}
+                />
+              </Card.Section>
+              <Text weight={500}>
+                {e.product.product_name.length > 30
+                  ? `${e.product.product_name.substring(0, 30)}...`
+                  : e.product.product_name}
+              </Text>
+              <div className="d-flex justify-content-between align-items-end">
+                <NumberInput
+                  defaultValue={e.quantity}
+                  placeholder="Quantity"
+                  label="Quantity"
+                  w={60}
+                  onChange={(value) => UpdateQuantity(e.product._id, value)}
+                />
+                <Text fw={700} size={25}>
+                  ₹
+                  {e.product.price -
+                    e.product.price * (e.product.discount / 100)}
                 </Text>
-                <div className="d-flex justify-content-between align-items-end">
-                  <NumberInput
-                    defaultValue={e.quantity}
-                    placeholder="Quantity"
-                    label="Quantity"
-                    w={60}
-                    onChange={(value) => UpdateQuantity(e.product._id, value)}
-                  />
-                  <Text fw={700} size={25}>
-                    ₹
-                    {e.product.price -
-                      e.product.price * (e.product.discount / 100)}
-                  </Text>
-                </div>
-                <Button
-                  variant="light"
-                  color="cyan"
-                  fullWidth
-                  mt={10}
-                  radius="md"
-                  onClick={() => RemoveProduct(e.product._id)}
-                >
-                  Remove from Cart
-                </Button>
-              </Card>
-            </>
+              </div>
+              <Button
+                variant="light"
+                color="cyan"
+                fullWidth
+                mt={10}
+                radius="md"
+                onClick={() => RemoveProduct(e.product._id)}
+              >
+                Remove from Cart
+              </Button>
+            </Card>
           );
         })}
       </div>

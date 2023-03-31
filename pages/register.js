@@ -53,7 +53,7 @@ function Register() {
 
   useEffect(() => {
     if (isLogin) {
-      Router.back();
+      Router.push("/");
     }
   }, [isLogin]);
 
@@ -93,7 +93,7 @@ function Register() {
               Cookies.set("user_id", data);
               form.reset();
               setIsLogin(true);
-              Router.back();
+              Router.push("/");
               setLoading(false);
             } catch (error) {
               setLoading(false);
