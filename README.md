@@ -12,6 +12,7 @@ user experience and provide a better interface.
 
 
 - [Next js](https://nextjs.org/)
+- [Matine](https://mantine.dev/)
 - [Bootstrap](https://getbootstrap.com/)
 - [MongoDB](https://www.mongodb.com/)
 
@@ -92,5 +93,6 @@ Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License. S
 
 
 - [Next js](https://nextjs.org/)
+- [Matine](https://mantine.dev/)
 - [Bootstrap](https://getbootstrap.com/)
 - [MongoDB](https://www.mongodb.com/)
