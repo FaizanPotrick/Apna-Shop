@@ -13,11 +13,6 @@ function MyApp({ Component, pageProps }) {
     alert: false,
     message: "",
   });
-  const [isError, setIsError] = useState({
-    errorPage: false,
-    status: "",
-    message: "",
-  });
   const [isLogin, setIsLogin] = useState(Cookies.get("user_id") ? true : false);
   const data = [
     {
@@ -77,9 +72,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Context.Provider
       value={{
-        isAlert,
         setIsAlert,
-        setIsError,
         data,
         isLogin,
         setIsLogin,

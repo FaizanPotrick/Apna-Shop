@@ -94,7 +94,7 @@ function Orders() {
                   }}
                 />
               </Card.Section>
-              <Text size={12} c="dimmed">
+              <Text size={12} c="dimmed" mt={4}>
                 ORDER # {e.order_id}
               </Text>
               <Text weight={500}>

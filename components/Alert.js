@@ -1,29 +1,32 @@
 import React, { useEffect } from "react";
+import { Alert as AlertCard } from "@mantine/core";
 
 function Alert({ alert, message, setIsAlert }) {
   useEffect(() => {
-    if (alert) {
-      setTimeout(() => {
-        setIsAlert({
-          alert: false,
-          message: "",
-        });
-      }, 3000);
-    }
+    if (!alert) return;
+    setTimeout(() => {
+      setIsAlert({
+        alert: false,
+        message: "",
+      });
+    }, 3000);
   }, [alert]);
+
   return (
-    <div
-      className={`p-3 rounded shadow`}
-      style={{
+    <AlertCard
+      color="cyan"
+      radius="md"
+      variant="filled"
+      className="shadow"
+      sx={{
         position: "fixed",
         top: "8.5vh",
-        left: "45%",
+        left: "46.5%",
         zIndex: 50,
-        backgroundColor: "ButtonHighlight",
       }}
     >
       {message}
-    </div>
+    </AlertCard>
   );
 }
 
