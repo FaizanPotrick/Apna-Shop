@@ -49,7 +49,7 @@ export default async (req, res) => {
             { user_id, product_id },
             {
               $set: {
-                quantity: response.quantity + parseInt(quantity),
+                quantity: cart_response.quantity + parseInt(quantity),
               },
             }
           );
