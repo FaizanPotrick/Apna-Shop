@@ -11,6 +11,7 @@ import {
   rem,
   Group,
   LoadingOverlay,
+  Title,
 } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 import { useMediaQuery } from "@mantine/hooks";
@@ -105,6 +106,9 @@ export default function Home() {
           );
         })}
       </Group>
+      <Title order={2} fw={500} className="mt-5 mb-2">
+        Recommended Products
+      </Title>
       <div
         style={{
           display: "flex",
