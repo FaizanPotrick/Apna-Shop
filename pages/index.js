@@ -106,9 +106,9 @@ export default function Home() {
           );
         })}
       </Group>
-      <Title order={2} fw={500} className="mt-5 mb-2">
+      {Products.length !== 0 && <Title order={2} fw={500} className="mt-5 mb-2">
         Recommended Products
-      </Title>
+      </Title>}
       <div
         style={{
           display: "flex",
