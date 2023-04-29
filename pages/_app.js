@@ -7,7 +7,6 @@ import Head from "next/head";
 import Script from "next/script";
 import { MantineProvider, Text } from "@mantine/core";
 import Cookies from "js-cookie";
-import ChatBot from "../components/ChatBot";
 
 function MyApp({ Component, pageProps }) {
   const [isAlert, setIsAlert] = useState({
@@ -103,7 +102,6 @@ function MyApp({ Component, pageProps }) {
         >
           <Navbar />
           <Component {...pageProps} />
-          <ChatBot />
           <footer
             className="text-center"
             style={{
