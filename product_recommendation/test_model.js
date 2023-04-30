@@ -32,7 +32,7 @@ const bag_of_words = (message) => {
 const predict_class = async (website_url, message) => {
   const classes = require("./classes.json");
   const model = await tf.loadLayersModel(
-    `${website_url}/api/model/model.json`
+    `${website_url}api/model/model.json`
   );
   const predict = model.predict(tf.tensor([bag_of_words(message)]));
   const result = await predict.dataSync();

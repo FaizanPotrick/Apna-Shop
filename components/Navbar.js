@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Router, { useRouter } from "next/router";
 import Cookies from "js-cookie";
 import Context from "../components/Context";
@@ -17,6 +17,11 @@ function Navbar() {
   const { isLogin, setIsLogin } = useContext(Context);
   const { searching } = useRouter().query;
   const [search, setSearch] = useState(searching || "");
+  const [ButtonsLogin, setButtonsLogin] = useState(false);
+
+  useEffect(() => {
+    if (isLogin) return setButtonsLogin(true);
+  }, [isLogin]);
 
   return (
     <Header
@@ -74,39 +79,36 @@ function Navbar() {
             required
           />
         </form>
-        <Group>
-          {isLogin && (
+        {ButtonsLogin ? (
+          <Group>
             <Button color="cyan" onClick={() => Router.push("/orders")}>
               Orders
             </Button>
-          )}
-          {isLogin && (
             <Button color="cyan" onClick={() => Router.push("/cart")}>
               Cart
             </Button>
-          )}
-          {isLogin && (
             <Button
               variant="default"
               onClick={() => {
                 setIsLogin(false);
+                setButtonsLogin(false);
                 Cookies.remove("user_id");
               }}
             >
               Log out
             </Button>
-          )}
-          {!isLogin && (
+          </Group>
+        ) : (
+          <Group>
             <Button variant="default" onClick={() => Router.push("/login")}>
               Log in
             </Button>
-          )}
-          {!isLogin && (
+
             <Button color="cyan" onClick={() => Router.push("/register")}>
               Sign up
             </Button>
-          )}
-        </Group>
+          </Group>
+        )}
       </Group>
     </Header>
   );
