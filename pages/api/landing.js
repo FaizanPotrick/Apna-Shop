@@ -7,8 +7,9 @@ db();
 
 export default async (req, res) => {
   const { user_id } = req.cookies;
+  const website_url = req.headers.referer;
   if (!user_id) {
-    const product_ids = await test_model("laptop");
+    const product_ids = await test_model(website_url, "laptop");
     const response = await Products.find({
       _id: { $in: product_ids },
     }).lean();
@@ -16,7 +17,7 @@ export default async (req, res) => {
   }
   const order_response = await Order.find({ user_id }).lean();
   if (order_response.length === 0) {
-    const product_ids = await test_model("fashion");
+    const product_ids = await test_model(website_url, "fashion");
     const response = await Products.find({
       _id: { $in: product_ids },
     }).lean();
@@ -26,9 +27,7 @@ export default async (req, res) => {
   const product_name = await Products.findOne({
     _id: order_response[product_index].product_id,
   }).lean();
-  const product_ids = await test_model(
-    product_name.category
-  );
+  const product_ids = await test_model(website_url, product_name.category);
   const response = await Products.find({
     _id: { $in: product_ids },
   }).lean();
