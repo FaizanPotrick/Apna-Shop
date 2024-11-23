@@ -38,14 +38,14 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [Products, setProducts] = useState([]);
 
-  useEffect(() => {
-    (async () => {
-      setLoading(true);
-      const { data: Data } = await axios.get("/api/landing");
-      setProducts(Data);
-      setLoading(false);
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     setLoading(true);
+  //     const { data: Data } = await axios.get("/api/landing");
+  //     setProducts(Data);
+  //     setLoading(false);
+  //   })();
+  // }, []);
 
   return (
     <div>
